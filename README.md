@@ -69,6 +69,13 @@ RootRez in debugging issues.
 }
 ```
 
+## Best Practices
+
+* Cache data that is unlikely to change frequently such as property data (not including rates) 
+and publisher settings.
+* Use low verbosity levels (0 is lowest, 3 is highest). The less data requested, the faster 
+the response.
+
 ## HTTP Status Codes
 
 HTTP Status Codes are used to provide errors, these will be accompanied by error messages. 
