@@ -101,7 +101,6 @@ upon success.
       ]
    },
    "payment":{
-      "type":"VISA",
       "cardholder":"Root Rez",
       "number":"4111111111111111",
       "month":"12",
