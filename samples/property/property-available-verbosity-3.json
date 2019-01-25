@@ -1,0 +1,234 @@
+{
+  "data": {
+    "id": 3144,
+    "name": "Kings Landing (CRS Test)",
+    "room_tax": 0,
+    "cutoff_days": 0,
+    "order": 3144,
+    "discount_rebate_type": "customer",
+    "url": "",
+    "currency": "USD",
+    "is_available": true,
+    "unavailable_reason": false,
+    "main_telephone": "1111111111",
+    "is_past_cutoff": null,
+    "feature": null,
+    "verbosity": 3,
+    "was_searched": true,
+    "source": "crs",
+    "checkin_time": "03:00 pm",
+    "checkout_time": "11:00 am",
+    "cutoff_time": "03:00 pm",
+    "property_type": {
+      "id": 9,
+      "name": "Hotel"
+    },
+    "destination": {
+      "id": 27,
+      "name": "Boise",
+      "areas": null
+    },
+    "property_description": {
+      "short_description": "Lorem ipsum dolor sit amet",
+      "long_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+      "location_short_description": "",
+      "location_long_description": "<p>Lorem ipsum dolor sit amet</p>",
+      "why_we_like_it": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n",
+      "staff_pick": "",
+      "why_we_like_it_list": [
+        "Lorem ipsum dolor sit amet"
+      ],
+      "what_you_need_to_know": null,
+      "location_description_list": null
+    },
+    "property_accommodation": [
+      {
+        "id": 14866,
+        "name": "Little Fingers Bodega",
+        "standard_occupancy": 2,
+        "maximum_occupancy": 4,
+        "short_description": "Family fun!",
+        "long_description": "&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;\n",
+        "bedding": "1",
+        "property_accommodation_provider_attribute_value": null,
+        "type": "Hotel Room",
+        "type_id": 1,
+        "adult_maximum_occupancy": 4,
+        "child_maximum_occupancy": 3,
+        "adult_rate_adjustment": 0,
+        "child_rate_adjustment": 0,
+        "promotional_savings": 0,
+        "is_available": true,
+        "is_closedout": false,
+        "is_occupancy_exceeded": false,
+        "has_no_inventory": false,
+        "is_less_than_min_stay": false,
+        "is_greater_than_max_stay": false,
+        "unavailable_reason": null,
+        "property_accommodation_type": null,
+        "rates": [
+          {
+            "code": "REZ",
+            "description": {
+              "title": "",
+              "text": null
+            },
+            "balance_due": 0,
+            "is_refundable": "",
+            "is_deposit_required": "",
+            "deposit_policy": null,
+            "cancellation_policy": "",
+            "has_discount": false,
+            "total": {
+              "original_nightly_avg": "100",
+              "nightly_avg": "100",
+              "original_subtotal": "200.00",
+              "subtotal": "200.00",
+              "tax": "0.00",
+              "fee": "0.00",
+              "balance_due": "0.00",
+              "checkin_fee": "0.00",
+              "total": "200.00",
+              "rebate": 0,
+              "promotional_savings": "0.00",
+              "discount_savings": 0
+            },
+            "beds": [],
+            "tax_items": [],
+            "fees": [],
+            "checkin_fees": [],
+            "promotion": null,
+            "nights": [
+              {
+                "rate": "100.00",
+                "minimum": 1,
+                "maximum": 30,
+                "original_rate": "100.00",
+                "promotional_savings": "0.00",
+                "promotional_id": 0,
+                "inventory": 100,
+                "date": "2019-01-29"
+              },
+              {
+                "rate": "100.00",
+                "minimum": 1,
+                "maximum": 30,
+                "original_rate": "100.00",
+                "promotional_savings": "0.00",
+                "promotional_id": 0,
+                "inventory": 100,
+                "date": "2019-01-30"
+              }
+            ]
+          }
+        ],
+        "property_accommodation_image": [],
+        "promotions": [],
+        "discount": false,
+        "message": [],
+        "meta_data": null,
+        "tmp": [],
+        "promotion": false
+      }
+    ],
+    "filter": null,
+    "amenity": null,
+    "property_image": [
+      {
+        "alt": "kings landing",
+        "is_hero_image": false,
+        "season": null,
+        "url": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_opt.jpg",
+        "url_small": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_small.jpg",
+        "url_medium": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_medium.jpg",
+        "external_data": null
+      }
+    ],
+    "property_fee": null,
+    "property_provider": [],
+    "physical_address": {
+      "line_1": "3399 Cassia St",
+      "line_2": "",
+      "city": "Boise ",
+      "country": "US",
+      "state": null,
+      "administrative_division": "ID",
+      "postal_code": "83705",
+      "longitude": -116.223559,
+      "latitude": 43.5970661,
+      "region": ""
+    },
+    "property_rating": {
+      "stars": {
+        "name": "Stars",
+        "value": 4,
+        "meta_data": null
+      }
+    },
+    "property_policy": [
+      {
+        "name": "Deposit",
+        "description": "<p>Lorem ipsum dolor sit amet</p>\n"
+      },
+      {
+        "name": "Cancellation",
+        "description": "<p>Lorem ipsum dolor sit amet</p>\n"
+      },
+      {
+        "name": "Check-in",
+        "description": ""
+      }
+    ],
+    "rate": {
+      "low": {
+        "total": {
+          "original_nightly_avg": "100",
+          "nightly_avg": "100",
+          "original_subtotal": "200.00",
+          "subtotal": "200.00",
+          "tax": "0.00",
+          "fee": "0.00",
+          "balance_due": "0.00",
+          "checkin_fee": "0.00",
+          "total": "200.00",
+          "rebate": 0,
+          "promotional_savings": "0.00",
+          "discount_savings": 0
+        },
+        "promotion": false,
+        "discount": false
+      }
+    },
+    "permalink": {
+      "geo": "property/3144/us/id/boise/kings-landing-crs-test",
+      "property": "property/3144/kings-landing-crs-test"
+    },
+    "payment_types": [
+      {
+        "code": "AX",
+        "name": "American Express",
+        "mandatoryDisplayText": null,
+        "processorCountryCode": null
+      },
+      {
+        "code": "CA",
+        "name": "Master Card",
+        "mandatoryDisplayText": null,
+        "processorCountryCode": null
+      },
+      {
+        "code": "DS",
+        "name": "Discover Card",
+        "mandatoryDisplayText": null,
+        "processorCountryCode": null
+      },
+      {
+        "code": "VI",
+        "name": "Visa",
+        "mandatoryDisplayText": null,
+        "processorCountryCode": null
+      }
+    ],
+    "meta_data": null
+  }
+}
