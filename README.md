@@ -10,7 +10,7 @@ The typical workflow of your application will be:
 
 - [Load Settings](settings.md)
 - [Get Properties](properties.md)
-- Property Details
+- [Property Detail](property.md)
 - Checkout Preview
 - Book Reservation
 - View Reservation
@@ -18,8 +18,7 @@ The typical workflow of your application will be:
 ## Environments
 
 Prior to being given a production key your application will need to be certified by the 
-RootRez development team. Depending on how you’re integrating with RootRez will determine 
-whether you will develop to sandbox or staging.
+RootRez development team in our sandbox environment. 
 
 **Sandbox** 
 
