@@ -90,6 +90,10 @@ Resource or hotel property does not exist, or cannot be returned due to business
 
 **5xx Server Exceptions**
 
+See below.
+
+## Exceptions
+
 Most exceptions will be accompanied with additional data. These can be caught in your application and specific, 
 user-friendly messages can be created for your end-users.
 
