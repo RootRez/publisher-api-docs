@@ -15,14 +15,14 @@ viewing property details and another for retrieving availability.
 Returns property data without availability. Take care to use a verbosity level that makes 
 sense. When verbosity is increased, requests take longer.
 
-##### Definitions:
+##### View Definitions:
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
 | verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least), 1, and 2 (most) are supported.  |
 
-##### Request:
+##### View Request:
 
 ```json
 {
@@ -35,7 +35,7 @@ sense. When verbosity is increased, requests take longer.
 }
 ```
 
-##### Response:
+##### View Response:
 
 ```json
 {
@@ -49,7 +49,7 @@ sense. When verbosity is increased, requests take longer.
             "name": "Kings Landing (CRS Test)",
             "room_tax": 0,
             "cutoff_days": 0,
-            "order": "10001.3144",
+            "order": 3,
             "discount_rebate_type": "customer",
             "url": "",
             "currency": "USD",
@@ -173,7 +173,7 @@ sense. When verbosity is increased, requests take longer.
 Returns property data with the addition of availability. Take care to use a verbosity level 
 that makes sense. When verbosity is increased, requests take longer.
 
-##### Definitions:
+##### Availability Definitions:
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -198,7 +198,7 @@ cannot support multi-room bookings.
 | children  | int | no | 0 | Amount of children  |
 
 
-Request:
+##### Availability Request:
 
 ```json
 {
@@ -227,81 +227,4 @@ Request:
 
 Response:
 
-```json
-{
-    "meta_data": {
-        "from_cache": false,
-        "total": 1,
-        "returned": 1
-    },
-    "data": [
-        {
-            "id": 3144,
-            "name": "Kings Landing (CRS Test)",
-            "is_available": false,
-            "was_searched": true,
-            "main_telephone": null,
-            "order": 1,
-            "rate": {
-                "low": {
-                    "total": false,
-                    "promotion": false,
-                    "discount": false
-                }
-            },
-            "feature": null,
-            "permalink": {
-                "geo": "property/3144/us/id/boise/kings-landing-crs-test",
-                "property": "property/3144/kings-landing-crs-test"
-            },
-            "property_description": {
-                "staff_pick": ""
-            },
-            "property_accommodation": [],
-            "property_policy": [],
-            "property_type": {
-                "id": 9,
-                "name": "Hotel"
-            },
-            "physical_address": {
-                "line_1": "3399 Cassia St",
-                "line_2": "",
-                "city": "Boise ",
-                "country": "US",
-                "state": null,
-                "administrative_division": "ID",
-                "postal_code": "83705",
-                "longitude": -116.223559,
-                "latitude": 43.5970661,
-                "region": ""
-            },
-            "destination": {
-                "id": 27,
-                "name": "Boise",
-                "areas": null
-            },
-            "property_rating": {
-                "stars": {
-                    "name": "Stars",
-                    "value": 4,
-                    "meta_data": null
-                }
-            },
-            "filter": [],
-            "amenity": [],
-            "unavailable_reason": false,
-            "property_image": [
-                {
-                    "alt": "kings landing",
-                    "is_hero_image": false,
-                    "season": null,
-                    "url": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_opt.jpg",
-                    "url_small": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_small.jpg",
-                    "url_medium": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_medium.jpg",
-                    "external_data": null
-                }
-            ]
-        }
-    ]
-}
-```
+The response structure is an array of property objects, see [view response](#view-response).
