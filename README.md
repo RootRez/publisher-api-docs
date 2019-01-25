@@ -39,9 +39,8 @@ your technical implementation coordinator.
 
 Get started by saying hello world to us.
 
-|  |  |
+|  Endpoint | /publisher/v3.0/.json?key=MyKey |
 | ------------- | ------------- |
-| Endpoint  | /publisher/v3.0/.json?key=MyKey  |
 | HTTP  | GET  |
 
 
