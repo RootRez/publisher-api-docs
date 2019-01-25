@@ -10,6 +10,8 @@ viewing property details and another for retrieving availability.
 
 ### View
 
+> HTTP POST: /publisher/v3.0/properties/view/.json
+
 Returns property data without availability. Take care to use a verbosity level that makes 
 sense. When verbosity is increased, requests take longer.
 
@@ -162,4 +164,144 @@ Response:
     ]
 }
 
+```
+
+### Availability
+
+> HTTP POST: /publisher/v3.0/properties/availability/.json
+
+Returns property data with the addition of availability. Take care to use a verbosity level 
+that makes sense. When verbosity is increased, requests take longer.
+
+Definitions:
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| properties  | string | yes |  | Comma separated list of property IDs  |
+| checkin  | string | yes |  | YYYY-MM-DD  |
+| checkout  | string | yes |  | YYYY-MM-DD  |
+| rooms  | array | yes |  | An array of room objects. See room definition below  |
+| promotion | string | no |  | Whether to require a promotion, accepts 'required' |
+| discount_code | string | no |  | Discount code |
+| currency  | string | no |  |  Three letter ISO currency code. If not supplied will default to setting in the CRS Admin |
+| limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
+| verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least), 1, and 2 (most) are supported.  |
+
+Room Definition:
+
+Specify a room object for each room the customer is looking to book. Note, some properties 
+cannot support multi-room bookings.
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| adults  | int | yes |  | Amount of adults  |
+| children  | int | no | 0 | Amount of children  |
+
+
+Request:
+
+```json
+{
+   "key": "MyApiKey",
+   "properties":"3144",
+   "verbosity": 2,
+   "currency":"USD",
+   "checkin":"2019-02-17",
+   "checkout":"2019-02-19",
+   "discount_code":"",
+   "promotion":"",
+   "rooms":[
+      {
+         "adults":2,
+         "children":0
+      }
+   ],
+   
+   "meta_data":{
+      "session_id":"39s0m0gt4ubo4d7lsr2b1a1pq5",
+      "user_agent":"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
+      "ip":"127.0.0.1"
+   }
+}
+```
+
+Response:
+
+```json
+{
+    "meta_data": {
+        "from_cache": false,
+        "total": 1,
+        "returned": 1
+    },
+    "data": [
+        {
+            "id": 3144,
+            "name": "Kings Landing (CRS Test)",
+            "is_available": false,
+            "was_searched": true,
+            "main_telephone": null,
+            "order": 1,
+            "rate": {
+                "low": {
+                    "total": false,
+                    "promotion": false,
+                    "discount": false
+                }
+            },
+            "feature": null,
+            "permalink": {
+                "geo": "property/3144/us/id/boise/kings-landing-crs-test",
+                "property": "property/3144/kings-landing-crs-test"
+            },
+            "property_description": {
+                "staff_pick": ""
+            },
+            "property_accommodation": [],
+            "property_policy": [],
+            "property_type": {
+                "id": 9,
+                "name": "Hotel"
+            },
+            "physical_address": {
+                "line_1": "3399 Cassia St",
+                "line_2": "",
+                "city": "Boise ",
+                "country": "US",
+                "state": null,
+                "administrative_division": "ID",
+                "postal_code": "83705",
+                "longitude": -116.223559,
+                "latitude": 43.5970661,
+                "region": ""
+            },
+            "destination": {
+                "id": 27,
+                "name": "Boise",
+                "areas": null
+            },
+            "property_rating": {
+                "stars": {
+                    "name": "Stars",
+                    "value": 4,
+                    "meta_data": null
+                }
+            },
+            "filter": [],
+            "amenity": [],
+            "unavailable_reason": false,
+            "property_image": [
+                {
+                    "alt": "kings landing",
+                    "is_hero_image": false,
+                    "season": null,
+                    "url": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_opt.jpg",
+                    "url_small": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_small.jpg",
+                    "url_medium": "https://media.rootrez.com//property_images/3144/5c474b9c0db2e_medium.jpg",
+                    "external_data": null
+                }
+            ]
+        }
+    ]
+}
 ```
