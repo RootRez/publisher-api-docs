@@ -14,7 +14,7 @@ Two methods are made available for bookings: preview and reservation.
 The preview method is for use on pre-checkout pages to display nightly rates, discounts, 
 subtotal, taxes, fees, and totals. 
 
-##### Preview Definitions:
+##### Preview Attributes:
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -56,13 +56,64 @@ subtotal, taxes, fees, and totals.
 The preview response is similar to a property/available.json response, but contains a complete 
 breakdown of taxes and fees. [See full response](samples/book/preview.json).
 
-
 ### Reservation
 
 > HTTP POST: /publisher/v3.0/book/reservation/.json
 
 The reservation method processes the submitted information and returns a confirmation number 
 upon success.
+
+##### Reservation Attributes:
+
+All required attributes from [preview](book.md#preview)
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| rooms  | array | yes |  | Array of guest objects, see below |
+| guest  | obj | yes |  | See guest object below |
+| payment  | obj | yes |  | See payment object below |
+
+##### Guest Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| first_name  | obj | yes |  | Guest first name |
+| last_name  | obj | yes |  | Guest first name |
+| email  | obj | yes |  | Guest email address |
+| phone  | obj | yes |  | Guest phone number |
+| note  | obj | no |  | An optional note to the hotel |
+| addresses | array | no |  | Array of objects |
+
+##### Address Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| type  | string | yes |  | Always Billing |
+| line_1  | string | yes |  | Street address |
+| line_2  | string | no |  | Apartment, Suite, etc... |
+| country  | string | yes |  | Two character ISO country code |
+| postal_code  | string | yes |  | Postal code |
+| region | string | no |  | Non-US reservations only. Province, State, or Administrative Region |
+| state | string | no |  | US reservations only |
+
+##### Payment Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| cardholder  | string | yes |  | Cardholders name |
+| month  | string | yes |  | Two character month (00-12) |
+| year  | int | yes |  | Four digit year |
+| cvv  | string | yes |  | CVV or CVV2 |
+| postal_code  | string | yes |  | Postal code |
+
+##### Room Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| name  | string | yes |  | Name of guest to put the room under  |
+| adults  | int | yes |  | Amount of adults  |
+| children  | int | no | 0 | Amount of children  |
+| bed_type  | string | no | 0 | Required if bed type option was specified  |
 
 ##### Reservation Request
 
