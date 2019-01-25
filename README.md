@@ -6,14 +6,14 @@ reservations, and retrieve other meta data you’d except from an Online Travel 
 The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or
  POST depending on the endpoint.
 
-The typical workflow of your application will be:
+Typical application workflow:
 
-- [Load Settings](settings.md)
-- [Get Properties](properties.md)
-- [Property Detail](property.md)
-- Checkout Preview
-- Book Reservation
-- View Reservation
+1. [Load Settings](settings.md)
+2. [Get Properties](properties.md)
+3. [Property Detail](property.md)
+4. [Checkout Preview](book.md#preview)
+5. [Book Reservation](book.md#book)
+6. [View Reservation](reservation.md)
 
 ## Environments
 
