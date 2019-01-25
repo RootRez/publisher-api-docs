@@ -225,6 +225,6 @@ cannot support multi-room bookings.
 }
 ```
 
-Response:
+##### Availability Response:
 
 The response structure is an array of property objects, see [view response](#view-response).
