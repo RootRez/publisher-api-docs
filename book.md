@@ -69,7 +69,7 @@ All required attributes from [preview](book.md#preview)
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| rooms  | array | yes |  | Array of guest objects, see below |
+| rooms  | array | yes |  | Array of room objects, see below |
 | guest  | obj | yes |  | See guest object below |
 | payment  | obj | yes |  | See payment object below |
 
