@@ -8,7 +8,7 @@ The API is a restful-like web service that can be accessed via JSON payloads ove
 
 The typical workflow of your application will be:
 
-- Retrieve Publisher Settings
+- [Retrieve Publisher Settings](settings.md)
 - Availability Search
 - Property Details
 - Checkout Preview
