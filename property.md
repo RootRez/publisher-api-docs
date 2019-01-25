@@ -15,7 +15,7 @@ viewing property details and another for retrieving availability.
 Returns property data without availability. Take care to use a verbosity level that makes 
 sense. When verbosity is increased, requests take longer.
 
-##### View Definitions:
+##### View Attributes:
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -48,7 +48,7 @@ Returns a single property object, see [view response](properties.md#view-respons
 Returns property data with the addition of availability. Take care to use a verbosity level 
 that makes sense. When verbosity is increased, requests take longer.
 
-##### Availability Definitions:
+##### Availability Attributes:
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -62,7 +62,7 @@ that makes sense. When verbosity is increased, requests take longer.
 | limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
 | verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least), 1, and 2 (most) are supported.  |
 
-##### Room Definition
+##### Room Object
 
 Specify a room object for each room the customer is looking to book. Note, some properties 
 cannot support multi-room bookings.
