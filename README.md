@@ -5,7 +5,7 @@ The Publisher API operates as a gateway for registered publishers to view proper
 reservations, and retrieve other meta data you’d except from an Online Travel Agency (OTA). 
 The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or
  POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with 
- some [definitions](wiki/Definitions) pertitent to this implementation.
+ some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
 
 Typical application workflow:
 
