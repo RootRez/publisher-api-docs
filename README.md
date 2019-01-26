@@ -80,26 +80,43 @@ the response.
 ## HTTP Status Codes
 
 HTTP Status Codes are used to provide errors, these will be accompanied by error messages. 
-Successful requests will result in a 200 OK code. Below is a list of the most commonly used 
-error status codes and corresponding examples.
+Successful requests will result in a 200 OK code. 
 
-**400 Bad Request**
+|  Attribute | Definition |
+| ------------- | ------------- |
+| type  | Exception name |
+| message  | Exception description |
+| url  | The requested URI |
+| code  | HTTP status code |
+
+Example:
+
+```json
+{
+    "type": "BadRequestException",
+    "message": "Unable to parse JSON. Is the request body malformed?",
+    "url": "/publisher/v3.0/property/available.json",
+    "code": 400
+}
+```
+
+**400 BadRequestException**
 
 Your request is likely missing required information or json is malformed.
 
-**401 Unauthorized**
+**401 UnauthorizedException**
 
 Authentication failed, you probably have an invalid key or a key has not been setup.
 
-**404 Not Found**
+**404 NotFoundException**
 
 Resource or hotel property does not exist, or cannot be returned due to business logic.
 
-**5xx Server Exceptions**
+**5xx InternalServerErrorException**
 
-See below.
+This, 500 Exception, are general exception messages. Most 500 level responses should be one of the types below.
 
-## Exceptions
+## Specific Exceptions
 
 Most exceptions will be accompanied with additional data. These can be caught in your application and specific, 
 user-friendly messages can be created for your end-users.
@@ -135,8 +152,3 @@ third party system.
 **DuplicateBookingException**
 
 A similar booking has already been processed.
-
-**InternalErrorException**
-
-These are general exception messages. If you come across generic exceptions please 
-submit a bug report: https://www.rootrez.com/support/
