@@ -83,9 +83,9 @@ HTTP Status Codes are used to provide errors, these will be accompanied by error
 Successful requests will result in a 200 OK code. 
 
 |  Attribute | Type | Definition |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | type  | string | Exception name |
-| message | string |  Exception description |
+| message | string |  A description of the error |
 | url  | string |  The requested URI |
 | code  | int |  HTTP status code |
 
