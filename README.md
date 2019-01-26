@@ -82,12 +82,12 @@ the response.
 HTTP Status Codes are used to provide errors, these will be accompanied by error messages. 
 Successful requests will result in a 200 OK code. 
 
-|  Attribute | Definition |
+|  Attribute | Type | Definition |
 | ------------- | ------------- |
-| type  | Exception name |
-| message  | Exception description |
-| url  | The requested URI |
-| code  | HTTP status code |
+| type  | string | Exception name |
+| message | string |  Exception description |
+| url  | string |  The requested URI |
+| code  | int |  HTTP status code |
 
 Example:
 
@@ -118,7 +118,7 @@ This and a 500 Exception, are general exception messages. Most 500 level respons
 
 ## Specific Exceptions
 
-Most exceptions will be accompanied with additional data. These can be caught in your application and specific, 
+Most exceptions will be accompanied with additional data in the message string. These can be caught in your application and specific, 
 user-friendly messages can be created for your end-users.
 
 **RoomUnavailableException**
