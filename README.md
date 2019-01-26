@@ -114,7 +114,7 @@ Resource or hotel property does not exist, or cannot be returned due to business
 
 **5xx InternalServerErrorException**
 
-This, 500 Exception, are general exception messages. Most 500 level responses should be one of the types below.
+This and a 500 Exception, are general exception messages. Most 500 level responses should be one of the types below.
 
 ## Specific Exceptions
 
