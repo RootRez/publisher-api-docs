@@ -72,6 +72,8 @@ RootRez in debugging issues.
 
 ## Best Practices
 
+* Use HTTPS. All communication with RootRez is handled over HTTPS.
+* Keep your API key out of version control (such as GIT or SVN), instead store in a local config file or similar secure means.
 * Cache data that is unlikely to change frequently such as property data (not including rates) 
 and publisher settings.
 * Use low verbosity levels (0 is lowest, 3 is highest). The less data requested, the faster 
