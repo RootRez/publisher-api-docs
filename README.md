@@ -78,6 +78,7 @@ RootRez in debugging issues.
 and publisher settings.
 * Use low verbosity levels (0 is lowest, 3 is highest). The less data requested, the faster 
 the response.
+* Pre-validate customer data such as billing address, email address, and credit card data before making requests to RootRez. While we do validate this information, creating client-side checks for your customers can greatly improve the booking experience.
 
 ## HTTP Status Codes
 
