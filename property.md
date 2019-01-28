@@ -58,7 +58,7 @@ that makes sense. When verbosity is increased, requests take longer.
 | checkin  | string | yes |  | YYYY-MM-DD  |
 | checkout  | string | yes |  | YYYY-MM-DD  |
 | rooms  | array | yes |  | An array of room objects. [See room definition below](#room-definition)  |
-| promotion | string | no | all | Whether to require a promotion, accepts 'required' or 'all'. If set to all properties without promotions will not be returned |
+| promotion | string | no | all | Whether to require a promotion, accepts 'required' or 'all'. If set to 'required' properties without promotions will not be returned |
 | discount_code | string | no |  | Discount code |
 | currency  | string | no |  |  Three letter ISO currency code. If not supplied will default to setting in the CRS Admin |
 | limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
