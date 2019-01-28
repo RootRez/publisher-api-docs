@@ -58,7 +58,7 @@ that makes sense. When verbosity is increased, requests take longer.
 | discount_code | string | no |  | Discount code |
 | currency  | string | no |  |  Three letter ISO currency code. If not supplied will default to setting in the CRS Admin |
 | limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
-| verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least), 1, and 2 (most) are supported.  |
+| verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least) - 3 (most) are supported.  |
 
 ##### Room Object
 
