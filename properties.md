@@ -82,7 +82,7 @@ cannot support multi-room bookings.
    "checkin":"2019-02-17",
    "checkout":"2019-02-19",
    "discount_code":"",
-   "promotion":"",
+   "promotion":"all",
    "rooms":[
       {
          "adults":2,
