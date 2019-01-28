@@ -18,6 +18,7 @@ subtotal, taxes, fees, and totals.
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
+| key  | string | yes |  | Your API key  |
 | property_id  | int | yes |  | The property ID |
 | accommodation_id  | int | yes |  | The room ID  |
 | rate_code | string | yes  |  | The rate plan for the room  |
