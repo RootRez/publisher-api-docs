@@ -27,7 +27,7 @@ If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to g
 
 ## Hello World 
 
-Get started by saying hello world to us.
+Saying hello world to us.
 
 |  Endpoint | /publisher/v3.0/.json?key=MyKey |
 | ------------- | ------------- |
