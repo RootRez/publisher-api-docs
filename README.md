@@ -16,23 +16,13 @@ Typical application workflow:
 5. [Book Reservation](book.md#book)
 6. [View Reservation](reservation.md)
 
-## Environments
+## Getting Starting
 
-Prior to being given a production key your application will need to be certified by the 
-RootRez development team in our sandbox environment. 
+Your technical implementation coordinator will email you the following detais:
 
-**Sandbox** 
-
-https://api-sandbox.rootrez.com/publisher/v3.0/
-
-**Production** 
-
-https://svc.rootrez.com/publisher/v3.0/
-
-## Authentication
-
-Access can be obtained through the use of a Publisher Key. This key will be provided by 
-your technical implementation coordinator.
+- API key
+- Sandbox environment details
+- [Postman](https://www.getpostman.com/) reqyest/response collections
 
 
 ## Hello World 
