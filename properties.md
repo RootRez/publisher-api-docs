@@ -19,6 +19,7 @@ sense. When verbosity is increased, requests take longer.
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
+| key  | string | yes |  | Your API key  |
 | limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
 | verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least) - 3 (most) are supported.  |
 
@@ -48,6 +49,7 @@ that makes sense. When verbosity is increased, requests take longer.
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
+| key  | string | yes |  | Your API key  |
 | properties  | string | yes |  | Comma separated list of property IDs  |
 | checkin  | string | yes |  | YYYY-MM-DD  |
 | checkout  | string | yes |  | YYYY-MM-DD  |
