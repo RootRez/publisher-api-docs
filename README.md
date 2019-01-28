@@ -18,11 +18,11 @@ Typical application workflow:
 
 ## Getting Starting
 
-Your technical implementation coordinator will email you the following detais:
+If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to get started. Your technical implementation coordinator will email you the following detais:
 
 - API key
 - Sandbox environment details
-- [Postman](https://www.getpostman.com/) reqyest/response collections
+- [Postman](https://www.getpostman.com/) request/response collections
 
 
 ## Hello World 
