@@ -105,3 +105,42 @@ cannot support multi-room bookings.
 ##### Availability Response:
 
 [See response](samples/property/property-available-verbosity-3.json). 
+
+##### Definitions
+
+| Attribute | Type | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- |
+| id  | integer |  | Property identifier |
+| name  | string |  | Property name |
+| room_tax  | double | 0 | Tax rate |
+| cutoff_days  | integer | 0 | Days the property must be booked in advance of check-in date |
+| order  | integer |  | Sort order of the property |
+| discount_rebate_type  | string | customer | For discount rebates (inquire with implementation coordinator) |
+| url | string |  | Website address |
+| currency | string |  | Properties currency (three character currency code) |
+| is_available | boolean |  | Whether any rooms are available for booking |
+| unavailable_reason  | string |  | A reason the property is unavailable |
+| main_telephone  | string |  | Property phone number |
+| ~~is_past_cutoff  | bool |  | Deprecated~~ |
+| verbosity | integer |  | The requested verbosity level |
+| was_searched | string |  | For debugging only |
+| source | string |  | The inventory source (crs, sabre, expedia, derbysoft, isi, etc...) |
+| checkin_time | string |  | Guest check-in time |
+| checkout_time | string |  | Guest check-out time |
+| cutoff_time | string |  | Time of day when same day bookings are no longer allowed |
+| property_type | object |  | Describes the type of property |
+| destination |  |  |  |
+| property_description | object |  | Object containing textual descriptions of the property |
+| property_accommodation | array |  | An array of room objects |
+| filter |  |  |  |
+| amenity |  |  |  |
+| property_image | array  |  | Array of property image objects  |
+| property_fee | |  |  |
+| property_provider | |  |  |
+| physical_address | object |  | Object describing physical address of the property |
+| property_rating | object |  | Object describing the rating of the property |
+| property_policy | array |  | Array of objects describing the properties various policies |
+| rate | object |  | Object describing rate summary for the property |
+| permalink | object |  | Used by white labels only |
+| payment_types | array |  | Array of accepted payment types |
+| meta_data |  |  |  |
