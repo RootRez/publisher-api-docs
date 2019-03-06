@@ -149,8 +149,8 @@ Response:
 | soldout_text | string | Sold Out | Messaging to consumer when property is sold out on white labels    |
 | google_analytics | string |  | Google analytics UA code for white labels |
 | datalayer_ecommerce | string | 0  | Whether to load Google Tag Manager data layers on white labels  (0 or 1) |
-| additional_terms_and_conditions | string | 0 | Displays additional terms in conditions on white labels checkout page |
-| booking_disclaimer | string | 0 | Adds booking disclaimer to the white labels checkout page |
+| additional_terms_and_conditions | string |  | Displays additional terms in conditions on white labels checkout page |
+| booking_disclaimer | string |  | Adds booking disclaimer to the white labels checkout page |
 | currency  | string |  | Three character currency code to display rates in |
 | show_fee_breakdown | string | 1 | Whether to display full fee/tax breakdown on white labels checkout page |
 | promotion_required | string | 0 | Requires all properties returned to have promotions |
