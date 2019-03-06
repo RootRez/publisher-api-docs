@@ -121,7 +121,7 @@ cannot support multi-room bookings.
 | is_available | boolean |  | Whether any rooms are available for booking |
 | unavailable_reason  | string |  | A reason the property is unavailable |
 | main_telephone  | string |  | Property phone number |
-| ~~is_past_cutoff  | bool |  | Deprecated~~ |
+| ~~is_past_cutoff~~  | deprecated |  | Deprecated |
 | verbosity | integer |  | The requested verbosity level |
 | was_searched | string |  | For debugging only |
 | source | string |  | The inventory source (crs, sabre, expedia, derbysoft, isi, etc...) |
