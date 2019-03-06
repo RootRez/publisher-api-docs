@@ -102,3 +102,8 @@ cannot support multi-room bookings.
 
 The response structure is an array of property objects, 
 see [property response](samples/property/property-available-verbosity-3.json).
+
+
+##### Definitions
+
+See [Property Detail](property.md) for definitions
