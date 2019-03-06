@@ -206,7 +206,16 @@
                 "external_data": null
             }
         ],
-        "property_fee": null,
+        "property_fee": [
+            {
+                "type": "dollar",
+                "applied": "stay",
+                "description": "Cleaning Fee",
+                "fee": 50,
+                "is_taxable": false,
+                "tax_rate": 0
+            }
+        ],
         "property_provider": {
             "1": {
                 "id": 1,
