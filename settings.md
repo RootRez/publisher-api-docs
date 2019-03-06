@@ -12,94 +12,76 @@ Response:
 ```json
 {
     "data": {
-        "publisher": {
-            "id": 13,
-            "name": "My Publisher",
-            "google_map_key": "",
-            "map_longitude": -111.707555,
-            "map_latitude": 40.571296,
-            "map_zoom": 12,
-            "map_type": "terrain",
-            "organization": {
-                "id": 3,
-                "name": "RootRez",
-                "title": "RootRez",
-                "currency": "USD",
-                "created": "2015-08-18T16:27:52-06:00",
-                "modified": null
-            },
-            "map": {
-                "config": {
-                    "pins": [
-                        {
-                            "name": "Local Landmark",
-                            "image": "/uploads/Asset-23mtn.png",
-                            "description": "Local landmark description",
-                            "background_color": "#FFFFFF",
-                            "text_color": "#000000",
-                            "longitude": -111.629191,
-                            "latitude": 40.579011
-                        },
-                    ]
-                },
-                "style": [
-                    {
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#e1e1e3"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
         "organization": "RootRez",
-        "organization_currency": "USD",
+        "organization_currency": null,
         "destinations": [
             {
-                "id": 33,
-                "name": "Alta",
+                "id": 27,
+                "name": "Boise",
                 "country": "US",
-                "latitude": 40.588839,
-                "longitude": -111.637979,
-                "region": "Utah",
-                "permalink": "/search/33/us/utah/alta",
-                "areas": [
+                "region": "Idaho",
+                "permalink": "/search/27/us/idaho/boise",
+                "children": [
                     {
-                        "id": 47,
-                        "name": "Town of Alta",
-                        "children": []
+                        "id": 194,
+                        "name": "Airport"
                     },
                     {
-                        "id": 48,
-                        "name": "Alta / Snowbird Bypass Road",
-                        "children": []
-                    },
-                    {
-                        "id": 49,
-                        "name": "Wildcat / Collins Base Area",
-                        "children": []
-                    },
-                    {
-                        "id": 40,
-                        "name": "Surrounding Area",
-                        "children": []
-                    },
-                    {
-                        "id": 209,
-                        "name": "Little Cottonwood Canyon",
-                        "children": []
-                    }
-                ],
-                "amenities": [
-                    {
-                        "id": 44,
-                        "name": "Shuttle to Slopes"
+                        "id": 377,
+                        "name": "Downtown"
                     }
                 ]
             }
-        ]
+        ],
+        "feature_filters": [
+            {
+                "id": 303,
+                "name": "Bike Rentals",
+                "icon": "bike-rental"
+            }
+        ],
+        "destinationIDs": [
+            0
+        ],
+        "publisher": {
+            "id": 40,
+            "name": "Book Westeros (Demo)",
+            "map_longitude": -116.190881,
+            "map_latitude": 43.613619,
+            "map_zoom": 11,
+            "map_type": "roadmap",
+            "google_map_key": "XYZ",
+            "domain": "lodging.bookwesteros.com",
+            "organization": {
+                "id": 3,
+                "name": "RootRez"
+            },
+            "settings": {
+                "client": {
+                    "sort_type": "manual",
+                    "destination_type": "single",
+                    "title_tag": "A Booking Engine of Ice and Fire",
+                    "description_tag": "A Booking Engine of Ice and Fire",
+                    "results_per_page": "40",
+                    "feature_filter_title": "Features",
+                    "google_map_key": "XYZ",
+                    "publisher_phone": "",
+                    "show_hotel_phone": "0",
+                    "show_external_hotel_link": "0",
+                    "display_tripadvisor": "1",
+                    "soldout_text": "Sold Out",
+                    "google_analytics": "",
+                    "additional_terms_and_conditions": "",
+                    "currency": "USD",
+                    "show_fee_breakdown": "1",
+                    "promotion_required": "0",
+                    "minimum_promotion_percent": "",
+                    "shopping_cart": "0"
+                },
+                "server": null,
+                "map": []
+            }
+        }
     }
 }
 ```
