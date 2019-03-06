@@ -132,11 +132,11 @@ cannot support multi-room bookings.
 | destination |  |  |  |
 | property_description | object |  | Object containing textual descriptions of the property |
 | property_accommodation | array |  | An array of room objects |
-| filter |  |  |  |
-| amenity |  |  |  |
+| filter | array |  | An array of filter objects |
+| amenity | array |  | An array of amenity objects  |
 | property_image | array  |  | Array of property image objects  |
-| property_fee | |  |  |
-| property_provider | |  |  |
+| property_fee | array |  | An array of objects describing property fees |
+| property_provider | array |  | An array of objects describing this properties available inventory connections |
 | physical_address | object |  | Object describing physical address of the property |
 | property_rating | object |  | Object describing the rating of the property |
 | property_policy | array |  | Array of objects describing the properties various policies |
@@ -144,3 +144,59 @@ cannot support multi-room bookings.
 | permalink | object |  | Used by white labels only |
 | payment_types | array |  | Array of accepted payment types |
 | meta_data |  |  |  |
+
+##### property.filter
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| id | integer |  | ID of the filter relating to the publishers filters |
+| name | string |  | Name of the filter |
+
+##### property.amenity
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| id | integer |  | ID of the amenity |
+| name | string |  | Name of the amenity |
+| category | string |  | Parent category of the amenity |
+| ~~group~~ | deprecated | | Deprecated |
+
+##### property.property_fee
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| type | string |  | Informs whether the fee is a flat fee (dollar) or percentage  |
+| applied | string |  | Informs whether the fee is applied once or for each night |
+| description | string |  | Description of the fee |
+| fee | double |  | The fee amount (see type to know if the fee is a dollar amount or percentage) |
+| is_taxable | bool | false | Whether the fee is taxable |
+| tax_rate | double | 0 | Applicable if is_taxable is set to true |
+
+##### property.property_provider
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| id | integer |  | Internal ID  |
+| name | string |  | Name of the connection |
+
+##### property.physical_address
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| line_1 | string |  | Street address  |
+| line_2 | string |  | Suite |
+| city | string |  | City |
+| country | string |  | Two character country code |
+| administrative_division | string | | State, province, or other administrative region |
+| postal_code | string |  | Mail service code |
+| longitude | integer | | Longitude |
+| latitude | integer | | Latitude |
+| ~~region~~ | deprecated | | Deprecated |
+| ~~state~~ | deprecated | | Deprecated |
+
+##### property.property_policy
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| name | string |  | name of policy  |
+| description | string |  | description of policy |
