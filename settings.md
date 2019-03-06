@@ -93,10 +93,10 @@ Response:
 | Attribute | Type | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- |
 | organization  | string |  | Name of the publishers parent organization  |
-| ~~organization_currency  | string |  | Deprecrated~~  |
+| ~~organization_currency~~  | deprecated |  | Deprecrated  |
 | destinations  | array |  | An array of one to many objects describing the destination assigned to the publisher |
 | feature_filters  | array |  | An array of one to many objects describing filters associated with the publisher |
-| ~~destinationIDs  | array |  | Deprecated~~  |
+| ~~destinationIDs~~  | deprecated |  | Deprecated  |
 | publisher  | object |  | An object describing the publisher |
 
 ### organization.destination
@@ -127,7 +127,7 @@ Response:
 | map_latitude  | integer |  | Center point on the map for white label publishers |
 | map_zoom  | integer | 10 | Map zoom level for white label publishers |
 | map_type  | string | roadmap | See Google map types |
-| ~~google_map_key  | string |  | Deprecated, use organization.publisher.settings.client.google_map_key~~ |
+| ~~google_map_key~~  | deprecated |  | Deprecated, use organization.publisher.settings.client.google_map_key |
 | domain | string |  | The publishers domain |
 | settings | object |  | Object describing client and server settings for the publisher |
 
