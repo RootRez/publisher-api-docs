@@ -103,13 +103,13 @@
                         "tax_items": [
                             {
                                 "name": "Sales Tax",
-                                "total": "0.00"
+                                "total": 0
                             }
                         ],
                         "fees": [
                             {
                                 "name": "Cleaning Fee",
-                                "total": "50.00"
+                                "total": 50
                             }
                         ],
                         "checkin_fees": [],
