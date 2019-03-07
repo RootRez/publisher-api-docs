@@ -66,6 +66,7 @@ Response:
                     "feature_filter_title": "Features",
                     "google_map_key": "",
                     "publisher_phone": "",
+                    "phone_number_call_out": "Talk to a local expert:",
                     "show_hotel_phone": false,
                     "show_external_hotel_link": false,
                     "display_tripadvisor": true,
