@@ -1,0 +1,182 @@
+{
+  "data": [
+    {
+      "id": 29875,
+      "property_id": 3144,
+      "publisher_id": 40,
+      "discount_id": null,
+      "status": "unconfirmed",
+      "total_charge": 200,
+      "room_charge": 200,
+      "fee_charge": 0,
+      "tax_charge": 0,
+      "balance_due": 0,
+      "property_fee": 0,
+      "created": "2019-03-04 14:20:05",
+      "meta_data": {
+        "subscribe_to_email_list": 0,
+        "uid": ""
+      },
+      "source_confirmation": null,
+      "source_reference": null,
+      "property_currency": "USD",
+      "usd_value": 1,
+      "publisher_currency": "USD",
+      "publisher_exchange_rate": 1,
+      "guest_currency": "USD",
+      "guest_exchange_rate": 1,
+      "discount": null,
+      "reservation_idx": "R190329875",
+      "reservation_property_accommodation": {
+        "id": 29889,
+        "reservation_id": 29875,
+        "property_accommodation_id": 14866,
+        "property_accommodation_name": "Little Fingers Bodega",
+        "checkin": "2019-04-15",
+        "checkout": "2019-04-17",
+        "guests_adult": 2,
+        "guests_children": 0,
+        "guest_name": "Root Rez",
+        "guest_note": ""
+      },
+      "property": {
+        "id": 3144,
+        "name": "Kings Landing (CRS Test)",
+        "checkin_time": "15:00:00",
+        "checkout_time": "11:00:00",
+        "desk_open_time": "07:00:00",
+        "desk_close_time": "23:00:00",
+        "property_image": [
+          {
+            "id": 68220,
+            "property_id": 3144,
+            "filename": "5c474b9c0db2e",
+            "ext": "jpg",
+            "title": "",
+            "alt": "kings landing",
+            "url": "http://rootrez-media.localhost/property_images/3144/5c474b9c0db2e_opt.jpg",
+            "url_small": "http://rootrez-media.localhost/property_images/3144/5c474b9c0db2e_small.jpg",
+            "url_medium": "http://rootrez-media.localhost/property_images/3144/5c474b9c0db2e_medium.jpg"
+          }
+        ],
+        "checkin_telephone": null,
+        "main_telephone": {
+          "number": "1111111111"
+        },
+        "checkin_address": {
+          "type": "checkin",
+          "line_1": "3399 Cassia St",
+          "line_2": "",
+          "city": "Boise ",
+          "postal_code": "83705",
+          "state_id": 12,
+          "country_id": 219,
+          "country": {
+            "id": 219,
+            "name": "United States",
+            "abbr": "US"
+          },
+          "state": {
+            "id": 12,
+            "name": "Idaho",
+            "abbr": "ID"
+          }
+        },
+        "physical_address": {
+          "type": "physical",
+          "line_1": "3399 Cassia St",
+          "line_2": "",
+          "city": "Boise ",
+          "postal_code": "83705",
+          "state_id": 12,
+          "country_id": 219,
+          "country": {
+            "id": 219,
+            "name": "United States",
+            "abbr": "US"
+          },
+          "state": {
+            "id": 12,
+            "name": "Idaho",
+            "abbr": "ID"
+          }
+        },
+        "policy": {
+          "booking_deposit": null,
+          "booking_cancellation": "",
+          "deposit": "<p>Lorem ipsum dolor sit amet</p>\n",
+          "cancellation": "<p>Lorem ipsum dolor sit amet</p>\n",
+          "check-in": ""
+        }
+      },
+      "provider": {
+        "id": 1,
+        "name": "CRS"
+      },
+      "reservation_payment": {
+        "reservation_id": 29875,
+        "type": "VISA",
+        "cardholder": "Root Rez",
+        "month": "12",
+        "year": "2019",
+        "number": "*****1111"
+      },
+      "reservation_customer": {
+        "id": 29843,
+        "reservation_id": 29875,
+        "first_name": "RootRez",
+        "last_name": "RootRez",
+        "email_address": "no-reply@rootrez.com",
+        "reservation_customer_telephone": {
+          "number": "1111111111"
+        },
+        "reservation_customer_address": [
+          {
+            "reservation_customer_id": 29843,
+            "type": "billing",
+            "line_1": "Some Place",
+            "line_2": "",
+            "city": "Salt Lake City",
+            "region": "",
+            "postal_code": "11111",
+            "state": {
+              "name": "Utah",
+              "abbr": "UT"
+            },
+            "country": {
+              "name": "United States",
+              "abbr": "US"
+            }
+          }
+        ]
+      },
+      "reservation_property_accommodation_rate": [
+        {
+          "reservation_property_accommodation_id": 29889,
+          "reservation_id": 29875,
+          "date": "2019-04-15",
+          "standard_rate": 100,
+          "calculated_rate": 100
+        },
+        {
+          "reservation_property_accommodation_id": 29889,
+          "reservation_id": 29875,
+          "date": "2019-04-16",
+          "standard_rate": 100,
+          "calculated_rate": 100
+        }
+      ],
+      "bed": false,
+      "reservation_fees": {
+        "fee_items": [],
+        "tax_items": [
+          {
+            "name": "Sales Tax",
+            "total": "0.00"
+          }
+        ],
+        "property_fees": []
+      }
+    }
+  ]
+}
