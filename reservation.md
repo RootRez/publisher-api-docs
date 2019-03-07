@@ -23,6 +23,8 @@ Retrieves a single reservation
 | reservation_number  | string | no |  | The reservation IDX string  |
 
 
+[See response](samples/reservation/view.json). 
+
 ### Index
 
 Retrieves many reservations
@@ -42,3 +44,4 @@ Retrieves many reservations
 | limit  | int | no | 100 | Limits the result set |
 | page  | int | no | 1 | For paging through results |
 
+The response will be an array of objects. [See response](samples/property/property-available-verbosity-3.json). 
