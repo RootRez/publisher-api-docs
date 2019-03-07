@@ -211,7 +211,7 @@ cannot support multi-room bookings.
 | total | double |  | Total booking amount |
 | rebate | double |  | Customer rebate amount if any |
 | promotional_savings | double |  | Amount of promotional savings applied |
-| discount_savings | double |  | Amount if discount savings applied |
+| discount_savings | double |  | Amount of discount savings applied |
 | ~~group~~ | deprecated | | Deprecated |
 
 ##### property.property_accommodation.rate.night
