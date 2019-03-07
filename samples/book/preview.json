@@ -277,13 +277,13 @@
                 "tax_rate": 0
             }
         ],
-        "property_provider": {
-            "1": {
+        "property_provider": [
+            {
                 "id": 1,
                 "name": "CRS",
                 "meta_data": []
             }
-        },
+        ],
         "physical_address": {
             "line_1": "3399 Cassia St",
             "line_2": "",

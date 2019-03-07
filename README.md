@@ -45,9 +45,10 @@ Response:
 
 ## HTTP POST Requirements
 
-When doing HTTP POST requests to the API, a client browser session_id key must be included in the 
-JSON payload. Additional data such as client IP address and user agent are recommended to assist 
-RootRez in debugging issues.
+When doing HTTP POST requests to the API the following meta data fields are required: 
+ * session_id: The browsers session identifier
+ * user_agent: The browser user agent string
+ * ip: The end-users IP Address
 
 ```json
 {
@@ -69,6 +70,7 @@ and publisher settings.
 * Use low verbosity levels (0 is lowest, 3 is highest). The less data requested, the faster 
 the response.
 * Pre-validate customer data such as billing address, email address, and credit card data before making requests to RootRez. While we do validate this information, creating client-side checks for your customers can greatly improve the booking experience.
+* It's advised that you watch this project so you receive notices on changes to documenation, which may include new additions to the API.
 
 ## HTTP Status Codes
 
