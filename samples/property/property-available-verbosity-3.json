@@ -148,7 +148,17 @@
                         ]
                     }
                 ],
-                "property_accommodation_image": [],
+                "property_accommodation_image": [
+                    {
+                        "alt": null,
+                        "is_hero_image": false,
+                        "season": null,
+                        "url": "http://rootrez-media.localhost/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_opt.png",
+                        "url_small": "http://rootrez-media.localhost/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_small.png",
+                        "url_medium": "http://rootrez-media.localhost/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_medium.png",
+                        "external_data": null
+                    }
+                ],
                 "promotions": [
                     {
                         "id": 2857,
