@@ -166,8 +166,8 @@
                         "name": "Best Promotion Ever",
                         "promotion_type_id": 2,
                         "amount": 10,
-                        "discount_applied": "40.40",
-                        "total_discount": "40.40",
+                        "discount_applied": 40.4,
+                        "total_discount": 40.4,
                         "promotion_type": {
                             "id": 2,
                             "name": "% off"
@@ -179,15 +179,15 @@
                     "category": "value-add",
                     "type": "",
                     "code": "TICKETS",
-                    "amount": "1.00",
+                    "amount": 1,
                     "description": "A free ticket",
                     "instructions": "Get your free ticket when you check-in.",
                     "non_refundable": true,
                     "min_subtotal": 50,
                     "display_string": "A free ticket",
                     "received_upon": "checkin",
-                    "discount_applied": "0.00",
-                    "rebate_applied": "0.00",
+                    "discount_applied": 0,
+                    "rebate_applied": 0,
                     "rebate_type": "customer"
                 },
                 "message": [],
@@ -199,8 +199,8 @@
                     "name": "Best Promotion Ever",
                     "promotion_type_id": 2,
                     "amount": 10,
-                    "discount_applied": "40.40",
-                    "total_discount": "40.40",
+                    "discount_applied": 40.4,
+                    "total_discount": 40.4,
                     "promotion_type": {
                         "id": 2,
                         "name": "% off"
@@ -329,8 +329,8 @@
                     "name": "Best Promotion Ever",
                     "promotion_type_id": 2,
                     "amount": 10,
-                    "discount_applied": "40.40",
-                    "total_discount": "40.40",
+                    "discount_applied": 40.4,
+                    "total_discount": 40.4,
                     "promotion_type": {
                         "id": 2,
                         "name": "% off"
@@ -341,15 +341,15 @@
                     "category": "value-add",
                     "type": "",
                     "code": "TICKETS",
-                    "amount": "1.00",
+                    "amount": 1,
                     "description": "A free ticket",
                     "instructions": "Get your free ticket when you check-in.",
                     "non_refundable": true,
                     "min_subtotal": 50,
                     "display_string": "A free ticket",
                     "received_upon": "checkin",
-                    "discount_applied": "0.00",
-                    "rebate_applied": "0.00",
+                    "discount_applied": 0,
+                    "rebate_applied": 0,
                     "rebate_type": "customer"
                 }
             }
