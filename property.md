@@ -184,9 +184,9 @@ cannot support multi-room bookings.
 | cancellation_policy | string |  | Rate level cancellation policy, takes precedence over other property policies |
 | total | object |  | An object describing the total costs of this rate |
 | beds | array |  | An array of bedding objects, if not empty, users must be presented with list of bedding options at time of booking |
-| ~~tax_items~~ | deprecated |  |  |
-| ~~fees~~ | deprecated |  |  |
-| ~~checkin_fees~~ | deprecated |  |  |
+| tax_items | array |  | Only populated when calling book/preview |
+| fees | array |  | Only populated when calling book/preview |
+| checkin_fees | array |  | Only populated when calling book/preview |
 | promotion | object |  | The primary promotion applied |
 | nights | array |  | An array of night objects describing each nights rates within the requested stay range |
 | property_accommodation_image | array |  | An array of image objects |
