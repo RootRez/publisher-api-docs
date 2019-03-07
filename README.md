@@ -45,9 +45,10 @@ Response:
 
 ## HTTP POST Requirements
 
-When doing HTTP POST requests to the API, a client browser session_id key must be included in the 
-JSON payload. Additional data such as client IP address and user agent are recommended to assist 
-RootRez in debugging issues.
+When doing HTTP POST requests to the API the following meta data fields are required: 
+ * session_id: The browsers session identifier
+ * user_agent: The browser user agent string
+ * ip: The end-users IP Address
 
 ```json
 {
