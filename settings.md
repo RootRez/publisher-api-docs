@@ -144,6 +144,7 @@ Response:
 | feature_filter_title | string | Features | A custom title for property filtering on white label publishers  |
 | google_map_key | string |  | Google map key |
 | publisher_phone | string |  | Publisher phone number to display on white labels |
+| phone_number_call_out | string |  | Publisher phone number call out text for white labels |
 | show_hotel_phone | boolean | false | Whether to show the hotels phone number on white labels (0 or 1) |
 | show_external_hotel_link  | boolean | false | Whether to show a link to the hotels website on white labels (0 or 1) |
 | display_tripadvisor | boolean | false | Whether to show Trip Advisor Ratings on white labels (0 or 1) |
