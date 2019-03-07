@@ -86,18 +86,18 @@
                         "cancellation_policy": "This exclusive offer is non-refundable. If you choose to cancel this booking you will not be refunded any of the payment. Please note, this policy takes precedence over the properties standard cancellation and deposit policies.",
                         "has_discount": true,
                         "total": {
-                            "original_nightly_avg": "100",
-                            "nightly_avg": "90",
-                            "original_subtotal": "400.00",
-                            "subtotal": "360.00",
-                            "tax": "0.00",
-                            "fee": "0.00",
-                            "balance_due": "0.00",
-                            "checkin_fee": "0.00",
-                            "total": "360.00",
-                            "rebate": "0.00",
-                            "promotional_savings": "40.00",
-                            "discount_savings": "0.00"
+                            "original_nightly_avg": 100.99,
+                            "nightly_avg": 90.89,
+                            "original_subtotal": 403.96,
+                            "subtotal": 363.56,
+                            "tax": 0,
+                            "fee": 0,
+                            "balance_due": 0,
+                            "checkin_fee": 0,
+                            "total": 363.56,
+                            "rebate": 0,
+                            "promotional_savings": 40.4,
+                            "discount_savings": 0
                         },
                         "beds": [],
                         "tax_items": [],
@@ -106,44 +106,44 @@
                         "promotion": null,
                         "nights": [
                             {
-                                "rate": "90.00",
+                                "rate": 90.89,
                                 "minimum": 1,
                                 "maximum": 30,
-                                "original_rate": "100.00",
-                                "promotional_savings": "10.00",
+                                "original_rate": 100.99,
+                                "promotional_savings": 10.1,
                                 "promotional_id": 2857,
                                 "inventory": 100,
-                                "date": "2019-03-11"
+                                "date": 2019
                             },
                             {
-                                "rate": "90.00",
+                                "rate": 90.89,
                                 "minimum": 1,
                                 "maximum": 30,
-                                "original_rate": "100.00",
-                                "promotional_savings": "10.00",
+                                "original_rate": 100.99,
+                                "promotional_savings": 10.1,
                                 "promotional_id": 2857,
                                 "inventory": 100,
-                                "date": "2019-03-12"
+                                "date": 2019
                             },
                             {
-                                "rate": "90.00",
+                                "rate": 90.89,
                                 "minimum": 1,
                                 "maximum": 30,
-                                "original_rate": "100.00",
-                                "promotional_savings": "10.00",
+                                "original_rate": 100.99,
+                                "promotional_savings": 10.1,
                                 "promotional_id": 2857,
                                 "inventory": 100,
-                                "date": "2019-03-13"
+                                "date": 2019
                             },
                             {
-                                "rate": "90.00",
+                                "rate": 90.89,
                                 "minimum": 1,
                                 "maximum": 30,
-                                "original_rate": "100.00",
-                                "promotional_savings": "10.00",
+                                "original_rate": 100.99,
+                                "promotional_savings": 10.1,
                                 "promotional_id": 2857,
                                 "inventory": 100,
-                                "date": "2019-03-14"
+                                "date": 2019
                             }
                         ]
                     }
@@ -166,8 +166,8 @@
                         "name": "Best Promotion Ever",
                         "promotion_type_id": 2,
                         "amount": 10,
-                        "discount_applied": "40.00",
-                        "total_discount": "40.00",
+                        "discount_applied": "40.40",
+                        "total_discount": "40.40",
                         "promotion_type": {
                             "id": 2,
                             "name": "% off"
@@ -199,8 +199,8 @@
                     "name": "Best Promotion Ever",
                     "promotion_type_id": 2,
                     "amount": 10,
-                    "discount_applied": "40.00",
-                    "total_discount": "40.00",
+                    "discount_applied": "40.40",
+                    "total_discount": "40.40",
                     "promotion_type": {
                         "id": 2,
                         "name": "% off"
@@ -208,12 +208,12 @@
                 }
             }
         ],
-        "filter": {
-            "303": {
+        "filter": [
+            {
                 "id": 303,
                 "name": "Bike Rentals"
             }
-        },
+        ],
         "amenity": [
             {
                 "id": 303,
@@ -310,18 +310,18 @@
         "rate": {
             "low": {
                 "total": {
-                    "original_nightly_avg": "100",
-                    "nightly_avg": "90",
-                    "original_subtotal": "400.00",
-                    "subtotal": "360.00",
-                    "tax": "0.00",
-                    "fee": "0.00",
-                    "balance_due": "0.00",
-                    "checkin_fee": "0.00",
-                    "total": "360.00",
-                    "rebate": "0.00",
-                    "promotional_savings": "40.00",
-                    "discount_savings": "0.00"
+                    "original_nightly_avg": 100.99,
+                    "nightly_avg": 90.89,
+                    "original_subtotal": 403.96,
+                    "subtotal": 363.56,
+                    "tax": 0,
+                    "fee": 0,
+                    "balance_due": 0,
+                    "checkin_fee": 0,
+                    "total": 363.56,
+                    "rebate": 0,
+                    "promotional_savings": 40.4,
+                    "discount_savings": 0
                 },
                 "promotion": {
                     "id": 2857,
@@ -329,8 +329,8 @@
                     "name": "Best Promotion Ever",
                     "promotion_type_id": 2,
                     "amount": 10,
-                    "discount_applied": "40.00",
-                    "total_discount": "40.00",
+                    "discount_applied": "40.40",
+                    "total_discount": "40.40",
                     "promotion_type": {
                         "id": 2,
                         "name": "% off"
@@ -358,7 +358,32 @@
             "geo": "property/3144/us/id/boise/kings-landing-crs-test",
             "property": "property/3144/kings-landing-crs-test"
         },
-        "payment_types": [],
+        "payment_types": [
+            {
+                "code": "AX",
+                "name": "American Express",
+                "mandatoryDisplayText": null,
+                "processorCountryCode": null
+            },
+            {
+                "code": "CA",
+                "name": "MasterCard",
+                "mandatoryDisplayText": null,
+                "processorCountryCode": null
+            },
+            {
+                "code": "DS",
+                "name": "Discover",
+                "mandatoryDisplayText": null,
+                "processorCountryCode": null
+            },
+            {
+                "code": "VI",
+                "name": "Visa",
+                "mandatoryDisplayText": null,
+                "processorCountryCode": null
+            }
+        ],
         "meta_data": null
     }
 }
