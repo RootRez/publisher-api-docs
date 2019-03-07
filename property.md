@@ -145,6 +145,132 @@ cannot support multi-room bookings.
 | payment_types | array |  | Array of accepted payment types |
 | meta_data |  |  |  |
 
+##### property.property_accommodation
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| id | integer |  | Room identifier  |
+| name | string |  | Name of the room |
+| standard_occupancy | integer |  | Standard occupancy of the room (amount of guests) |
+| maximum_occupancy | integer |  | Maximum number of guests allowed |
+| short_description | string | | A brief description of the room |
+| long_description | string | | A longer description of the room |
+| bedding | string | | A description of the bedding types available |
+| type | string | | Type of room |
+| ~~adult_maximum_occupancy~~ | deprecated | |  |
+| ~~child_maximum_occupancy~~ | deprecated | |  |
+| ~~adult_rate_adjustment~~ | deprecated | |  |
+| ~~child_rate_adjustment~~ | deprecated | |  |
+| is_available | boolean | | Whether the room is available for booking |
+| is_closedout | boolean | | Whether the room is closed out for booking |
+| is_occupancy_exceeded | boolean | | Whether the requested guest amounts exceed occupancy |
+| has_no_inventory | boolean | | Whether the room has no inventory |
+| is_less_than_min_stay | boolean | | Whether the requested dates are less than minimum stay required |
+| is_greater_than_max_stay | boolean | | Whether the requested dates are greater than maximum stay allowed |
+| ~~unavailable_reason~~ | deprecated | |  |
+| ~~property_accommodation_type~~ | deprecated | |  |
+| rates | array | | An array of rate objects |
+
+##### property.property_accommodation.rate
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| code | string |  | Rate code identifier  |
+| description | object |  | An object that describes the rate |
+| balance_due | double |  | The balance due at time of booking |
+| is_refundable | string |  | Whether the rate is refundable (can be Y (yes), N (no), or empty for unknown (see property_policy) |
+| is_deposit_required | string |  | Whether a deposit is required (can be Y (yes), N (no), or empty for unknown (see property_policy) |
+| deposit_policy | string |  | Rate level deposit policy, takes precedence over other property policies |
+| cancellation_policy | string |  | Rate level cancellation policy, takes precedence over other property policies |
+| total | object |  | An object describing the total costs of this rate |
+| beds | array |  | An array of bedding objects, if not empty, users must be presented with list of bedding options at time of booking |
+| ~~tax_items~~ | deprecated |  |  |
+| ~~fees~~ | deprecated |  |  |
+| ~~checkin_fees~~ | deprecated |  |  |
+| promotion | object |  | The primary promotion applied |
+| nights | array |  | An array of night objects describing each nights rates within the requested stay range |
+| property_accommodation_image | array |  | An array of image objects |
+| discount | object |  | The applied discount code |
+| ~~message~~ | deprecated |  |  |
+| ~~meta_data~~ | deprecated |  |  |
+| ~~tmp~~ | deprecated |  |  |
+| promotions | array |  | An array of promotion objects applied |
+
+##### property.property_accommodation.rate.total
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| original_nightly_avg | double |  | Average nightly average before discounts are applied |
+| nightly_avg | double |  | The nightly average of the rate |
+| original_subtotal | double |  | Subtotal prior to discounts being applied |
+| subtotal | double |  | Subtotal amount |
+| tax | double |  | Total taxes  |
+| fee | double |  | Total fees |
+| balance_due | double |  | Total balance due at time of booking |
+| checkin_fee | double |  | Additional fees due at time of check-in (not included in balance due or total) |
+| total | double |  | Total booking amount |
+| rebate | double |  | Customer rebate amount if any |
+| promotional_savings | double |  | Amount of promotional savings applied |
+| discount_savings | double |  | Amount if discount savings applied |
+| ~~group~~ | deprecated | | Deprecated |
+
+##### property.property_accommodation.rate.night
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| rate | double |  | Rate |
+| ~~minimum~~ | deprecated |  |  |
+| ~~maximum~~ | deprecated |  |  |
+| original_rate | double |  | Rate before promotions were applied |
+| promotional_savings | double |  | Amount of promotional savings applied |
+| promotional_id | int |  | The ID of the applied promotion |
+| inventory | int |  | Inventory available (only certain inventory sources will provide inventory counts, no inventory counts available on free sales) |
+| date | string |  | Date |
+
+##### property.property_accommodation.rate.promotion
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| id | integer |  | Identifier |
+| display_string | string |  | Shortened version of the promotion |
+| name | double |  | Full name of the promotion |
+| promotion_type_id | int |  | Promotion type identifier |
+| amount | double |  | Amount of promotion |
+| discount_applied | double |  | Total promotion applied to rate |
+| total_discount | double |  | Total promotion applied to rate |
+| promotion_type | object |  | Object describing the type of promotion |
+
+##### property.property_accommodation.rate.discount
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| id | integer |  | Identifier |
+| category | string |  | Categories are value-add, promotion, and discount |
+| type | |  |  |
+| code | string |  | The discounts code (supplied in request) |
+| amount | double |  | The amount (not applicable for value-adds) |
+| description | string |  | Description of the discount |
+| instructions | string |  | Instructions to be provided to the guest (only applicable for value-adds) |
+| non_refundable | boolean |  | If true, the rate is not refundable when the discount is applied |
+| min_subtotal | double |  | Minimum required sub-total for the discount to be applied |
+| display_string | string |  | Same as description |
+| received_upon | string |  | Can be check-in or email (only applicable to value-adds) |
+| discount_applied | double |  | The total discount applied |
+| rebate_applied | string |  | Only applicable to category of discount |
+| rebate_type | string | customer | Only applicable to category of discount  |
+
+##### property.property_accommodation.property_accommodation_image
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| alt | string |  | HTML Alt attribute text |
+| ~~is_hero_image~~ | deprecated |  |  |
+| ~~season~~ | |  | deprecated |
+| url | string |  | Full image |
+| url_small | double |  | Thumbnail |
+| url_medium | string |  | Medium resized |
+| ~~external_data~~ |  |  | Deprecated |
+
 ##### property.filter
 
 | Attribute | Type | Default | Definition | 
@@ -160,6 +286,18 @@ cannot support multi-room bookings.
 | name | string |  | Name of the amenity |
 | category | string |  | Parent category of the amenity |
 | ~~group~~ | deprecated | | Deprecated |
+
+##### property.property_image
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| alt | string |  | HTML Alt attribute text |
+| ~~is_hero_image~~ | deprecated |  |  |
+| season | string |  | Can be empty, summer, or winter |
+| url | string |  | Full image |
+| url_small | double |  | Thumbnail |
+| url_medium | string |  | Medium resized |
+| ~~external_data~~ |  |  | Deprecated |
 
 ##### property.property_fee
 
@@ -200,3 +338,12 @@ cannot support multi-room bookings.
 | ------------- | ------------- | ------------- | ------------- |
 | name | string |  | name of policy  |
 | description | string |  | description of policy |
+
+##### property.payment_type
+
+| Attribute | Type | Default | Definition | 
+| ------------- | ------------- | ------------- | ------------- |
+| code | string |  | Two character credit card code  |
+| name | string |  | Credit Card company |
+| mandatoryDisplayText | string |  | If set, this string must be displayed to the customer on the checkout page  |
+| processorCountryCode | string |  | Where the payment will be processed, required in some countries |
