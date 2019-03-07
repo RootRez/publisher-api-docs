@@ -59,26 +59,26 @@ Response:
             "settings": {
                 "client": {
                     "sort_type": "manual",
-                    "destination_type": "single",
-                    "title_tag": "A Booking Engine of Ice and Fire",
-                    "description_tag": "A Booking Engine of Ice and Fire",
-                    "results_per_page": "40",
+                    "destination_type": "",
+                    "title_tag": "",
+                    "description_tag": "",
+                    "results_per_page": 40,
                     "feature_filter_title": "Features",
-                    "google_map_key": "AIzaSyD15CNPxnsXfNM6Ev_7YJ4-lIhGZ_sQ0Yw",
+                    "google_map_key": "",
                     "publisher_phone": "",
-                    "show_hotel_phone": "0",
-                    "show_external_hotel_link": "0",
-                    "display_tripadvisor": "1",
+                    "show_hotel_phone": false,
+                    "show_external_hotel_link": false,
+                    "display_tripadvisor": true,
                     "soldout_text": "Sold Out",
                     "google_analytics": "",
-                    "datalayer_ecommerce": "0",
+                    "datalayer_ecommerce": false,
                     "additional_terms_and_conditions": "",
                     "booking_disclaimer": "",
                     "currency": "USD",
-                    "show_fee_breakdown": "1",
-                    "promotion_required": "0",
+                    "show_fee_breakdown": true,
+                    "promotion_required": false,
                     "minimum_promotion_percent": "",
-                    "shopping_cart": "0"
+                    "shopping_cart": false
                 },
                 "server": null,
                 "map": []
@@ -143,16 +143,16 @@ Response:
 | feature_filter_title | string | Features | A custom title for property filtering on white label publishers  |
 | google_map_key | string |  | Google map key |
 | publisher_phone | string |  | Publisher phone number to display on white labels |
-| show_hotel_phone | string | 0 | Whether to show the hotels phone number on white labels (0 or 1) |
-| show_external_hotel_link  | string | 0 | Whether to show a link to the hotels website on white labels (0 or 1) |
-| display_tripadvisor | string | 0 | Whether to show Trip Advisor Ratings on white labels (0 or 1) |
+| show_hotel_phone | boolean | false | Whether to show the hotels phone number on white labels (0 or 1) |
+| show_external_hotel_link  | boolean | false | Whether to show a link to the hotels website on white labels (0 or 1) |
+| display_tripadvisor | boolean | false | Whether to show Trip Advisor Ratings on white labels (0 or 1) |
 | soldout_text | string | Sold Out | Messaging to consumer when property is sold out on white labels    |
 | google_analytics | string |  | Google analytics UA code for white labels |
-| datalayer_ecommerce | string | 0  | Whether to load Google Tag Manager data layers on white labels  (0 or 1) |
+| datalayer_ecommerce | boolean | false  | Whether to load Google Tag Manager data layers on white labels  (0 or 1) |
 | additional_terms_and_conditions | string |  | Displays additional terms in conditions on white labels checkout page |
 | booking_disclaimer | string |  | Adds booking disclaimer to the white labels checkout page |
 | currency  | string |  | Three character currency code to display rates in |
-| show_fee_breakdown | string | 1 | Whether to display full fee/tax breakdown on white labels checkout page |
-| promotion_required | string | 0 | Requires all properties returned to have promotions |
+| show_fee_breakdown | boolean | true | Whether to display full fee/tax breakdown on white labels checkout page |
+| promotion_required | boolean | false | Requires all properties returned to have promotions |
 | minimum_promotion_percent | string |  | Used in conjunction with promotion_required |
-| shopping_cart | string | 0 | Applicable only to ski resort publishers |
+| shopping_cart | boolean | false | Applicable only to ski resort publishers |
