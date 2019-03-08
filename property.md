@@ -123,7 +123,7 @@ cannot support multi-room bookings.
 | main_telephone  | string |  | Property phone number |
 | ~~is_past_cutoff~~  | deprecated |  | Deprecated |
 | verbosity | integer |  | The requested verbosity level |
-| was_searched | string |  | For debugging only |
+| was_searched | boolean |  | Lets the client know whether an ARI search was performed on the property |
 | source | string |  | The inventory source (crs, sabre, expedia, derbysoft, isi, etc...) |
 | checkin_time | string |  | Guest check-in time |
 | checkout_time | string |  | Guest check-out time |
