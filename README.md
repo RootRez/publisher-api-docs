@@ -89,6 +89,14 @@ the response.
 * Pre-validate customer data such as billing address, email address, and credit card data before making requests to RootRez. While we do validate this information, creating client-side checks for your customers can greatly improve the booking experience.
 * It's advised that you watch this project so you receive notices on changes to documenation, which may include new additions to the API.
 
+## Development Life Cycle
+
+1. Read the docuemntation.
+2. Develop your client
+3. Notify your implementation coordinator of completion to receive certification steps.
+4. Complete certification process and be granted production access.
+5. Complete test booking in production.
+
 ## HTTP Status Codes
 
 HTTP Status Codes are used to provide errors, these will be accompanied by error messages. 
