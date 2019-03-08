@@ -7,7 +7,7 @@ The API is a restful-like web service that can be accessed via JSON payloads ove
  POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with 
  some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
 
-Typical application workflow:
+Typical application workflow ([see example site](https://lodging.bookwesteros.com)):
 
 1. [Load Settings](settings.md)
 
