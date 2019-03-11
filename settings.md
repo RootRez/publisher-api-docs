@@ -108,6 +108,7 @@ Response:
 | country  | string |  | Two character country code |
 | region  | string |  | Administrative region (state, province etc.) |
 | children  | array |  | An array of sub-destination objects |
+| permalink  | string |  | A suggested URL for white labels to use |
 
 ### organization.feature_filter
 
