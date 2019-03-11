@@ -1,7 +1,6 @@
 ## Settings
 
-Retrieves a publishers settings and other meta data such as the destinations associated 
-with the requested publisher.
+Retrieves a publishers settings and other meta data such as the destinations associated with the requested publisher. Publisher settings are defined in the [CRS Admin](https://crs.rootrez.com/admin).
 
 | Endpoint | HTTP |
 | ------------- | ------------- |
