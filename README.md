@@ -35,7 +35,7 @@ Will return single or mulitple reservations.
 
 ## Getting Starting
 
-If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to get started. Your technical implementation coordinator will email you the following detais:
+If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to get started. Your technical implementation coordinator will email you the following details:
 
 - API key
 - Sandbox environment details
