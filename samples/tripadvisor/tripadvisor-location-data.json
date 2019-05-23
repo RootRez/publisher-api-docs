@@ -1,0 +1,143 @@
+ {
+    "address_obj": {
+        "street1": "Main Street",
+        "street2": "",
+        "city": "Honesdale",
+        "state": "Pennsylvania",
+        "country": "United States",
+        "postalcode": "85364",
+        "address_string": "Main Street, Honesdale, PA 85364"
+    },
+    "latitude": "41.57719",
+    "rating": "4.0",
+    "location_id": "730099",
+    "trip_types": [
+        {
+            "name": "business",
+            "value": "82",
+            "localized_name": "Business"
+        },
+        {
+            "name": "couples",
+            "value": "471",
+            "localized_name": "Couples"
+        },
+        {
+            "name": "solo",
+            "value": "177",
+            "localized_name": "Solo travel"
+        },
+        {
+            "name": "family",
+            "value": "133",
+            "localized_name": "Family"
+        },
+        {
+            "name": "friends",
+            "value": "78",
+            "localized_name": "Friends getaway"
+        }
+    ],
+    "ta_message": {
+        "is_red": false,
+        "text": "This is a fictional place, as seen on NBC's \"The Office.\" Please do not try to book a visit here."
+    },
+    "write_review": "https://www.tripadvisor.com/UserReview-g52842-d730099-m61824-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html",
+    "ancestors": [
+        {
+            "abbrv": null,
+            "level": "City",
+            "name": "Honesdale",
+            "location_id": "52842"
+        },
+        {
+            "abbrv": null,
+            "level": "District",
+            "name": "Pocono Mountains Region",
+            "location_id": "1771384"
+        },
+        {
+            "abbrv": "PA",
+            "level": "State",
+            "name": "Pennsylvania",
+            "location_id": "28959"
+        },
+        {
+            "abbrv": null,
+            "level": "Country",
+            "name": "United States",
+            "location_id": "191"
+        }
+    ],
+    "longitude": "-75.257866",
+    "hours": null,
+    "percent_recommended": null,
+    "partner_location_id": [
+        "730099"
+    ],
+    "review_rating_count": {
+        "1": "86",
+        "2": "85",
+        "3": "75",
+        "4": "253",
+        "5": "620"
+    },
+    "subratings": [
+        {
+            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+            "name": "rate_location",
+            "value": "4.0",
+            "localized_name": "Location"
+        },
+        {
+            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.gif",
+            "name": "rate_sleep",
+            "value": "3.5",
+            "localized_name": "Sleep Quality"
+        },
+        {
+            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+            "name": "rate_room",
+            "value": "4.0",
+            "localized_name": "Rooms"
+        },
+        {
+            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+            "name": "rate_service",
+            "value": "4.0",
+            "localized_name": "Service"
+        },
+        {
+            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+            "name": "rate_value",
+            "value": "4.0",
+            "localized_name": "Value"
+        },
+        {
+            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.5.gif",
+            "name": "rate_cleanliness",
+            "value": "3.5",
+            "localized_name": "Cleanliness"
+        }
+    ],
+    "ranking_data": null,
+    "photo_count": "290",
+    "location_string": "Honesdale, Pocono Mountains Region, Pennsylvania",
+    "web_url": "https://www.tripadvisor.com/Hotel_Review-g52842-d730099-Reviews-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824",
+    "price_level": "$$",
+    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-61824-5.svg",
+    "awards": [],
+    "name": "Schrute Farms",
+    "num_reviews": "1119",
+    "category": {
+        "name": "hotel",
+        "localized_name": "Hotel"
+    },
+    "subcategory": [
+        {
+            "name": "bb",
+            "localized_name": "Bed and Breakfast"
+        }
+    ],
+    "see_all_photos": "https://www.tripadvisor.com/Hotel_Review-g52842-d730099-m61824-Reviews-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html#photos"
+}

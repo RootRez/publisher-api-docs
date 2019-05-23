@@ -1,0 +1,240 @@
+[
+    {
+        "title": "Was ok",
+        "text": "There was a very strange checkout procedure. There's a long wait at checkout, where the hotel staff go and look at the room, while one has to keep waiting at the reception. Not seen anyhting like it at any other hotel!",
+        "rating": 5,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-61824-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r674306317-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review674306317",
+                "data": {
+                    "id": "674306317",
+                    "lang": "en",
+                    "location_id": "730099",
+                    "published_date": "2019-05-15T22:19:39-0400",
+                    "rating": 5,
+                    "helpful_votes": "0",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-61824-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r674306317-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review674306317",
+                    "trip_type": "Family",
+                    "travel_date": "2019-05",
+                    "text": "There was a very strange checkout procedure. There's a long wait at checkout, where the hotel staff go and look at the room, while one has to keep waiting at the reception. Not seen anyhting like it at any other hotel!",
+                    "user": {
+                        "username": "mehj7",
+                        "user_location": {
+                            "name": null,
+                            "id": null
+                        }
+                    },
+                    "title": "Was ok",
+                    "owner_response": null,
+                    "subratings": [
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.0.gif",
+                            "name": "rate_room",
+                            "value": "3",
+                            "localized_name": "Rooms"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.0.gif",
+                            "name": "rate_value",
+                            "value": "3",
+                            "localized_name": "Value"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.0.gif",
+                            "name": "rate_sleep",
+                            "value": "3",
+                            "localized_name": "Sleep Quality"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.0.gif",
+                            "name": "rate_location",
+                            "value": "3",
+                            "localized_name": "Location"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss3.0.gif",
+                            "name": "rate_cleanliness",
+                            "value": "3",
+                            "localized_name": "Cleanliness"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss1.0.gif",
+                            "name": "rate_service",
+                            "value": "1",
+                            "localized_name": "Service"
+                        }
+                    ]
+                }
+            }
+        },
+        "source": "tripadvisor_partner"
+    },
+    {
+        "title": "In a word... perfectenshlog",
+        "text": "Couldn’t have been more pleased with my stay in the irrigation themed room. The table making demonstration by Moes was both Informational and entertaining. Would highly recommend this venue to anyone in the electric city area who doesn’t mind using an outhouse when nature calls!",
+        "rating": 5,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-61824-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r673847648-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review673847648",
+                "data": {
+                    "id": "673847648",
+                    "lang": "en",
+                    "location_id": "730099",
+                    "published_date": "2019-05-13T21:07:33-0400",
+                    "rating": 5,
+                    "helpful_votes": "1",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-61824-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r673847648-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review673847648",
+                    "trip_type": "Solo travel",
+                    "travel_date": "2019-05",
+                    "text": "Couldn’t have been more pleased with my stay in the irrigation themed room. The table making demonstration by Moes was both Informational and entertaining. Would highly recommend this venue to anyone in the electric city area who doesn’t mind using an outhouse when nature calls!",
+                    "user": {
+                        "username": "Alexandra C",
+                        "user_location": {
+                            "name": null,
+                            "id": null
+                        }
+                    },
+                    "title": "In a word... perfectenshlog",
+                    "owner_response": null,
+                    "subratings": []
+                }
+            }
+        },
+        "source": "tripadvisor_partner"
+    },
+    {
+        "title": "If I could turn back time!",
+        "text": "Schrute Farms has to be by far the best beet themed Bed and breakfast out there. The rooms were decorated in such a way that you really feel like you are on a beet farm. The menu selection is all related to the farm theme of beets, and ell delicious. I now know more about beets than I thought Humanly possible. I feel like this would be a great place for a wedding or garden party.",
+        "rating": 4,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s4.0-61824-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r672858310-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review672858310",
+                "data": {
+                    "id": "672858310",
+                    "lang": "en",
+                    "location_id": "730099",
+                    "published_date": "2019-05-09T12:02:12-0400",
+                    "rating": 4,
+                    "helpful_votes": "1",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s4.0-61824-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r672858310-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review672858310",
+                    "trip_type": "Couples",
+                    "travel_date": "2019-05",
+                    "text": "Schrute Farms has to be by far the best beet themed Bed and breakfast out there. The rooms were decorated in such a way that you really feel like you are on a beet farm. The menu selection is all related to the farm theme of beets, and ell delicious. I now know more about beets than I thought Humanly possible. I feel like this would be a great place for a wedding or garden party.",
+                    "user": {
+                        "username": "acksparrow",
+                        "user_location": {
+                            "name": null,
+                            "id": null
+                        }
+                    },
+                    "title": "If I could turn back time!",
+                    "owner_response": null,
+                    "subratings": [
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+                            "name": "rate_room",
+                            "value": "4",
+                            "localized_name": "Rooms"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+                            "name": "rate_value",
+                            "value": "4",
+                            "localized_name": "Value"
+                        },
+                        {
+                            "rating_image_url": "https://static.tacdn.com/img2/ratings/traveler/ss4.0.gif",
+                            "name": "rate_service",
+                            "value": "4",
+                            "localized_name": "Service"
+                        }
+                    ]
+                }
+            }
+        },
+        "source": "tripadvisor_partner"
+    },
+    {
+        "title": "Yest",
+        "text": "I love this one but the one is not one of the best games in this one thing you can see the graphics are awesome great great and great for all the great one thing you to see and you get the good great time to see wows",
+        "rating": 3,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s3.0-61824-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r668675883-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review668675883",
+                "data": {
+                    "id": "668675883",
+                    "lang": "en",
+                    "location_id": "730099",
+                    "published_date": "2019-04-23T09:29:12-0400",
+                    "rating": 3,
+                    "helpful_votes": "0",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s3.0-61824-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r668675883-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review668675883",
+                    "trip_type": "Solo travel",
+                    "travel_date": "2019-04",
+                    "text": "I love this one but the one is not one of the best games in this one thing you can see the graphics are awesome great great and great for all the great one thing you to see and you get the good great time to see wows",
+                    "user": {
+                        "username": "TAFBQA",
+                        "user_location": {
+                            "name": "Needham, Massachusetts",
+                            "id": "41699"
+                        }
+                    },
+                    "title": "Yest",
+                    "owner_response": null,
+                    "subratings": []
+                }
+            }
+        },
+        "source": "tripadvisor_partner"
+    },
+    {
+        "title": "A once in a lifetime experience",
+        "text": "The architecture reminds one of a quaint Tuscan beet farm, and the natural aroma of the beets drifts into the bedrooms and makes you dream of simpler times. You will never want to leave your room. The informative lecture will satisfy all your beet curiosity, and the dawn goose walk will tug at your heart strings. Table making never seemed so possible. Great story to tell your friends. Plenty of parking! The staff's attention to detail and devotion to cleanliness was limitless. From their enthusiastic welcome to the last wave good-bye, Schrute Farms delivers.",
+        "rating": 5,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-61824-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r667885101-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review667885101",
+                "data": {
+                    "id": "667885101",
+                    "lang": "en",
+                    "location_id": "730099",
+                    "published_date": "2019-04-20T10:22:52-0400",
+                    "rating": 5,
+                    "helpful_votes": "4",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-61824-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g52842-d730099-r667885101-Schrute_Farms-Honesdale_Pocono_Mountains_Region_Pennsylvania.html?m=61824#review667885101",
+                    "trip_type": "Couples",
+                    "travel_date": "2018-10",
+                    "text": "The architecture reminds one of a quaint Tuscan beet farm, and the natural aroma of the beets drifts into the bedrooms and makes you dream of simpler times. You will never want to leave your room. The informative lecture will satisfy all your beet curiosity, and the dawn goose walk will tug at your heart strings. Table making never seemed so possible. Great story to tell your friends. Plenty of parking! The staff's attention to detail and devotion to cleanliness was limitless. From their enthusiastic welcome to the last wave good-bye, Schrute Farms delivers.",
+                    "user": {
+                        "username": "E78S4",
+                        "user_location": {
+                            "name": null,
+                            "id": null
+                        }
+                    },
+                    "title": "A once in a lifetime experience",
+                    "owner_response": {
+                        "id": "672574059",
+                        "lang": "en",
+                        "published_date": "2019-05-08T09:01:52-0400",
+                        "author": "eman187322, Manager at Schrute Farms, responded to this review",
+                        "text": "test",
+                        "title": "Owner Response"
+                    },
+                    "subratings": []
+                }
+            }
+        },
+        "source": "tripadvisor_partner"
+    }
+]

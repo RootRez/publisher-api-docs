@@ -33,6 +33,13 @@ For booking a reservation only.
 
 Will return single or mulitple reservations.
 
+## Misc
+
+- [Discounts](discounts.md)
+
+Retrieve discount code information.
+
+
 ## Getting Starting
 
 If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to get started. Your technical implementation coordinator will email you the following details:

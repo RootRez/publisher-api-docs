@@ -2,6 +2,8 @@
 
 Retrieves a publishers settings and other meta data such as the destinations associated with the requested publisher. Publisher settings are defined in the [CRS Admin](https://crs.rootrez.com/admin).
 
+Client-side settings are implemented on the client. You may choose to use these settings or ignore them.
+
 | Endpoint | HTTP |
 | ------------- | ------------- |
 | /publisher/v3.0/.json?key=MyKey  | GET  |
@@ -57,6 +59,7 @@ Response:
             },
             "settings": {
                 "client": {
+                    "booking_engine": "ota",
                     "sort_type": "manual",
                     "destination_type": "",
                     "title_tag": "",
@@ -78,10 +81,39 @@ Response:
                     "show_fee_breakdown": true,
                     "promotion_required": false,
                     "minimum_promotion_percent": "",
-                    "shopping_cart": false
+                    "gdpr_cookie_consent": true,
+                    "shopping_cart": false,
+                    "shopping_cart_store_id": "",
+                    "shopping_cart_token": ""
                 },
-                "server": null,
-                "map": []
+                "map": {
+                    "config": {
+                        "pins": [
+                            {
+                                "name": "Map Pin",
+                                "description": "A map pin!",
+                                "image": "http://rootrez-media.localhost/map_pins/40/map-pin-1553006655.png",
+                                "text_color": "#000000",
+                                "background_color": "#FFFFFF",
+                                "latitude": 43.610636,
+                                "longitude": -116.281862,
+                                "zoom_level": 10,
+                                "file": "map_pins/40/map-pin-1553006655.png"
+                            },
+                            {
+                                "name": "Another pin",
+                                "description": "pins",
+                                "image": "http://rootrez-media.localhost/map_pins/40/another-pin-1553611904.png",
+                                "text_color": "#000000",
+                                "background_color": "#FFFFFF",
+                                "latitude": 43.626046,
+                                "longitude": -116.184358,
+                                "zoom_level": 11,
+                                "file": "map_pins/40/another-pin-1553611904.png"
+                            }
+                        ]
+                    }
+                }
             }
         }
     }
@@ -136,6 +168,7 @@ Response:
 
 | Attribute | Type | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- 
+| booking_engine | string | ota | Applicable to RootRez hosted publishers only |
 | sort_type | string |  | How properties should be sorted (manual vs random) |
 | destination_type | string |  | Controls map display for white label publishers (single vs multiple) |
 | title_tag | string |  | HTML title tag for white label publishers |
@@ -157,4 +190,8 @@ Response:
 | show_fee_breakdown | boolean | true | Whether to display full fee/tax breakdown on white labels checkout page |
 | promotion_required | boolean | false | Requires all properties returned to have promotions |
 | minimum_promotion_percent | string |  | Used in conjunction with promotion_required |
+| gdpr_cookie_consent | boolean | true | Whether to display a GDPR compliant consent message |
 | shopping_cart | boolean | false | Applicable only to ski resort publishers |
+| shopping_cart_store_id | string |  | Applicable only to ski resort publishers |
+| shopping_cart_token | string |  | Applicable only to ski resort publishers |
+

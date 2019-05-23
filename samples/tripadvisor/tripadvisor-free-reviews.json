@@ -1,0 +1,104 @@
+[
+    {
+        "title": "Beautiful new hotel in a relaxing location",
+        "text": "This Hampton is new and nestled at the base of Little Cottonwood Canyon.  It is close to I-215 so it's easy to get anywhere fast! You walk outside and smell the clean, crisp mountain air and can...",
+        "rating": 5,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-25881-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g57016-d12526565-r672251151-Hampton_Inn_Salt_Lake_City_Cottonwood-Holladay_Utah.html?m=25881#review672251151",
+                "data": {
+                    "id": "672251151",
+                    "lang": "en",
+                    "location_id": "12526565",
+                    "published_date": "2019-05-07T12:07:42-0400",
+                    "rating": 5,
+                    "helpful_votes": "0",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-25881-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g57016-d12526565-r672251151-Hampton_Inn_Salt_Lake_City_Cottonwood-Holladay_Utah.html?m=25881#review672251151",
+                    "trip_type": "Friends getaway",
+                    "travel_date": "2019-05",
+                    "text": "This Hampton is new and nestled at the base of Little Cottonwood Canyon.  It is close to I-215 so it's easy to get anywhere fast! You walk outside and smell the clean, crisp mountain air and can...",
+                    "user": {
+                        "username": "Kristin A",
+                        "user_location": {
+                            "name": "Tampa, United States",
+                            "id": null
+                        }
+                    },
+                    "title": "Beautiful new hotel in a relaxing location",
+                    "is_machine_translated": false
+                }
+            }
+        },
+        "source": "tripadvisor_free"
+    },
+    {
+        "title": "Wonky Suite Layout",
+        "text": "Wonky Suite Layout.  Bed does not face TV.  The regular King with microwave and fridge room was great. Suites face a berm/hill.  Ask for a room with a view which is downhill to the city.  Wet bar...",
+        "rating": 4,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s4.0-25881-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g57016-d12526565-r669225250-Hampton_Inn_Salt_Lake_City_Cottonwood-Holladay_Utah.html?m=25881#review669225250",
+                "data": {
+                    "id": "669225250",
+                    "lang": "en",
+                    "location_id": "12526565",
+                    "published_date": "2019-04-25T10:57:26-0400",
+                    "rating": 4,
+                    "helpful_votes": "0",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s4.0-25881-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g57016-d12526565-r669225250-Hampton_Inn_Salt_Lake_City_Cottonwood-Holladay_Utah.html?m=25881#review669225250",
+                    "trip_type": "Family",
+                    "travel_date": "2019-04",
+                    "text": "Wonky Suite Layout.  Bed does not face TV.  The regular King with microwave and fridge room was great. Suites face a berm/hill.  Ask for a room with a view which is downhill to the city.  Wet bar...",
+                    "user": {
+                        "username": "Adventure36921296911",
+                        "user_location": {
+                            "name": null,
+                            "id": null
+                        }
+                    },
+                    "title": "Wonky Suite Layout",
+                    "is_machine_translated": false
+                }
+            }
+        },
+        "source": "tripadvisor_free"
+    },
+    {
+        "title": "Cottonwood canyons home base",
+        "text": "Reasonable price and great location for the canyons. Hot tub is actually hot and is amazing after a day skiing. Nearby good bars and restaurants. Plentiful free parking. Staff very helpful and...",
+        "rating": 5,
+        "meta_data": {
+            "tripadvisor": {
+                "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-25881-5.svg",
+                "url": "https://www.tripadvisor.com/ShowUserReviews-g57016-d12526565-r667254776-Hampton_Inn_Salt_Lake_City_Cottonwood-Holladay_Utah.html?m=25881#review667254776",
+                "data": {
+                    "id": "667254776",
+                    "lang": "en",
+                    "location_id": "12526565",
+                    "published_date": "2019-04-17T13:20:14-0400",
+                    "rating": 5,
+                    "helpful_votes": "0",
+                    "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/s5.0-25881-5.svg",
+                    "url": "https://www.tripadvisor.com/ShowUserReviews-g57016-d12526565-r667254776-Hampton_Inn_Salt_Lake_City_Cottonwood-Holladay_Utah.html?m=25881#review667254776",
+                    "trip_type": "Solo travel",
+                    "travel_date": "2019-04",
+                    "text": "Reasonable price and great location for the canyons. Hot tub is actually hot and is amazing after a day skiing. Nearby good bars and restaurants. Plentiful free parking. Staff very helpful and...",
+                    "user": {
+                        "username": "NxBx2018",
+                        "user_location": {
+                            "name": "Austin, Texas",
+                            "id": "30196"
+                        }
+                    },
+                    "title": "Cottonwood canyons home base",
+                    "is_machine_translated": false
+                }
+            }
+        },
+        "source": "tripadvisor_free"
+    }
+]
