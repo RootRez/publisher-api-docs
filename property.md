@@ -145,7 +145,7 @@ cannot support multi-room bookings.
 | payment_types | array |  | Array of accepted payment types |
 | is_tripadvisor_partner | bool | false | If this setting is enabled, enhanced trip advisor reviews will be available |
 | book_direct_link | string | | Only applicable to RootRez hosted booking engines | 
-| reviews | object | | Trip Advisor review data will be returned if possible. [Non partner review sample](samples/tripadvisor/tripadvisor-free-reviews.json) vs [Partner review sample](samples/tripadvisor/tripadvisor-partner-reviews.json) |
+| reviews | array | | Trip Advisor review data will be returned if possible. [Non partner review sample](samples/tripadvisor/tripadvisor-free-reviews.json) vs [Partner review sample](samples/tripadvisor/tripadvisor-partner-reviews.json) |
 | tripadvisor_location | object | | Trip Advisor location data will be returned if possible. [See sample](samples/tripadvisor/tripadvisor-location-data.json) |
 | meta_data |  |  |  |
 
