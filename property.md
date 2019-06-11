@@ -271,9 +271,11 @@ cannot support multi-room bookings.
 | ~~is_hero_image~~ | deprecated |  |  |
 | ~~season~~ | |  | deprecated |
 | url | string |  | Full image |
-| url_small | double |  | Thumbnail |
-| url_medium | string |  | Medium resized |
+| ~~url_small~~ | double |  | Deprecated |
+| ~~url_medium~~ | string |  | Deprecated |
 | ~~external_data~~ |  |  | Deprecated |
+
+> Note, image URLs will display full-sized images. You can reduce the size and thus load on your end-users browsers with the width and height parameters. Example: https://img.rootrez.com/property_images/3144/kings-landing-crs-test-317fb9ea1d18a46ad0e96bb399224bbe.jpg?width=300&height=200
 
 ##### property.filter
 
@@ -299,9 +301,11 @@ cannot support multi-room bookings.
 | ~~is_hero_image~~ | deprecated |  |  |
 | season | string |  | Can be empty, summer, or winter |
 | url | string |  | Full image |
-| url_small | double |  | Thumbnail |
-| url_medium | string |  | Medium resized |
+| ~~url_small~~ | double |  | Deprecated |
+| ~~url_medium~~ | string |  | Deprecated |
 | ~~external_data~~ |  |  | Deprecated |
+
+> Note, image URLs will display full-sized images. You can reduce the size and thus load on your end-users browsers with the width and height parameters. Example: https://img.rootrez.com/property_images/3144/kings-landing-crs-test-317fb9ea1d18a46ad0e96bb399224bbe.jpg?width=300&height=200
 
 ##### property.property_fee
 
