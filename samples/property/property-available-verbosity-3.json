@@ -153,9 +153,9 @@
                         "alt": null,
                         "is_hero_image": false,
                         "season": null,
-                        "url": "http://rootrez-media.localhost/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_opt.png",
-                        "url_small": "http://rootrez-media.localhost/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_small.png",
-                        "url_medium": "http://rootrez-media.localhost/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_medium.png",
+                        "url": "https://img.rootrez.com/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_opt.png",
+                        "url_small": "https://img.rootrez.com/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_small.png",
+                        "url_medium": "https://img.rootrez.com/accommodation_images/14866/little-fingers-bodega-0cf6555f81dfbcf46aff67e326e76b87_medium.png",
                         "external_data": null
                     }
                 ],
@@ -251,9 +251,9 @@
                 "alt": "kings landing",
                 "is_hero_image": false,
                 "season": null,
-                "url": "http://rootrez-media.localhost/property_images/3144/5c474b9c0db2e_opt.jpg",
-                "url_small": "http://rootrez-media.localhost/property_images/3144/5c474b9c0db2e_small.jpg",
-                "url_medium": "http://rootrez-media.localhost/property_images/3144/5c474b9c0db2e_medium.jpg",
+                "url": "https://img.rootrez.com/property_images/3144/5c474b9c0db2e_opt.jpg",
+                "url_small": "https://img.rootrez.com/property_images/3144/5c474b9c0db2e_small.jpg",
+                "url_medium": "https://img.rootrez.com/property_images/3144/5c474b9c0db2e_medium.jpg",
                 "external_data": null
             }
         ],
