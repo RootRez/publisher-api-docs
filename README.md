@@ -9,27 +9,27 @@ The API is a restful-like web service that can be accessed via JSON payloads ove
 
 Typical application workflow ([see example site](https://lodging.bookwesteros.com)):
 
-1. [Load Settings](settings.md)
+- [Load Settings](settings.md)
 
 Load any pertitent publisher settings into your local cache.
 
-2. [Get Properties](properties.md)
+- [Get Properties](properties.md)
 
 Best practice is to request all properties via a verbose call to properties/view.json storing the static property meta data in a local cache. Then update lead rates with low-verbosity calls to properties/available.json. XHR calls can be used within your client to load full room rates with singluar calls to property/available.json
 
-3. [Property Detail](property.md)
+- [Property Detail](property.md)
 
 Typically used for XHR calls to get additional property data from your search results page or when browsing direct to a property page.
 
-4. [Checkout Preview](book.md#preview)
+- [Checkout Preview](book.md#preview)
 
 The preview call will perform a real-time inventory lookup where possible. This should only be called on your checkout page implementation.
 
-5. [Book Reservation](book.md#book)
+- [Book Reservation](book.md#book)
 
 For booking a reservation only.
 
-6. [View Reservation](reservation.md)
+- [View Reservation](reservation.md)
 
 Will return single or mulitple reservations.
 
