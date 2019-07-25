@@ -98,7 +98,7 @@ the response.
 
 ## Development Life Cycle
 
-1. Read the docuemntation.
+1. Read the documentation.
 2. Develop your client
 3. Notify your implementation coordinator of completion to receive certification steps.
 4. Complete certification process and be granted production access.
