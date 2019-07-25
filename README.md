@@ -2,7 +2,7 @@
 
 This document is meant to guide a developer through the process of connecting to the [RootRez API](https://www.rootrez.com/support/developers/). 
 The Publisher API operates as a gateway for registered publishers to view properties, book 
-reservations, and retrieve other meta data you’d except from an Online Travel Agency (OTA). 
+reservations, and retrieve other meta data you’d expect from an Online Travel Agency (OTA). 
 The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or
  POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with 
  some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
