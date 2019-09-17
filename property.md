@@ -184,8 +184,8 @@ cannot support multi-room bookings.
 | balance_due | double |  | The balance due at time of booking |
 | is_refundable | string |  | Whether the rate is refundable (can be Y (yes), N (no), or empty for unknown (see property_policy) |
 | is_deposit_required | string |  | Whether a deposit is required (can be Y (yes), N (no), or empty for unknown (see property_policy) |
-| deposit_policy | string |  | Rate level deposit policy, takes precedence over other property policies |
-| cancellation_policy | string |  | Rate level cancellation policy, takes precedence over other property policies |
+| deposit_policy | string |  | Rate level deposit policy, takes precedence over other property policies. Not all rates return a deposit policy. |
+| cancellation_policy | string |  | Rate level cancellation policy, takes precedence over other property policies. Not all rates return a deposit policy. |
 | total | object |  | An object describing the total costs of this rate |
 | beds | array |  | An array of bedding objects, if not empty, users must be presented with list of bedding options at time of booking |
 | tax_items | array |  | Only populated when calling book/preview |
