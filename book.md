@@ -94,8 +94,12 @@ All required attributes from [preview](book.md#preview)
 | line_2  | string | no |  | Apartment, Suite, etc... |
 | country  | string | yes |  | Two character ISO country code |
 | postal_code  | string | yes |  | Postal code |
-| region | string | no |  | Non-US reservations only. Province, State, or Administrative Region |
-| state | string | no |  | US reservations only |
+| region | string | * yes |  | Non-US reservations only. Province, State, or Administrative Region |
+| state | string | * yes |  | US reservations only |
+
+* U.S. addresses: the two character state abbreviation is required for state. 
+* Canadian: the two character province abbreviation is required for region. 
+* Australian: the two character state abbreviation is required for region. 
 
 ##### Payment Object
 
