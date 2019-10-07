@@ -12,7 +12,15 @@ Discounts can be configured via the CRS Admin interface under your Publisher.
 
 Returns all active discount codes that can be applied to the given stay dates.
 
-##### View Attributes:
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| key  | string | yes |  | Your API key  |
+| checkin  | string | yes |  | Check-in date (YYYY-MM-DD) |
+| checkout  | string | yes | | Check-out date (YYYY-MM-DD)  |
+
+#### Grouped:
+
+This will return value-add discounts if the publisher is using grouped value-adds.
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
