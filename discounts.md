@@ -8,7 +8,7 @@ Discounts can be configured via the CRS Admin interface under your Publisher.
 
 ### All
 
-> HTTP POST: /publisher/v3.0/discounts/all/.json
+> HTTP GET: /publisher/v3.0/discounts/all/.json
 
 Returns all active discount codes that can be applied to the given stay dates.
 
