@@ -44,7 +44,7 @@ Returns a single property object, see [view response](properties.md#view-respons
 
 ### Availability
 
-> HTTP POST: /publisher/v3.0/property/availability/.json
+> HTTP POST: /publisher/v3.0/property/available/.json
 
 Returns property data with the addition of availability. Take care to use a verbosity level 
 that makes sense. When verbosity is increased, requests take longer.
