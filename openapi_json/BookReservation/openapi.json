@@ -1,0 +1,217 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Reservation",
+    "description" : "Used to place a reservation",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api-staging.rootrez.com"
+  } ],
+  "paths" : {
+    "/publisher/v3.0/book/reservation/.json" : {
+      "post" : {
+        "description" : "Created for RootRez Client use",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\r\n   \"key\":\"MyKey\",\r\n   \"property_id\":\"3159\",\r\n   \"accommodation_id\":\"14972\",\r\n   \"rate_code\":\"REZ\",\r\n   \"checkin\":\"2020-08-25\",\r\n   \"checkout\":\"2020-08-27\",\r\n   \"rooms\":[\r\n      {\r\n         \"name\":\"camera 1 persoana\",\r\n         \"adults\":\"1\",\r\n         \"children\":\"0\",\r\n         \"bed_type\":false\r\n      }\r\n   ],\r\n   \"guest\":{\r\n      \"first_name\":\"RootRez\",\r\n      \"last_name\":\"RootRez\",\r\n      \"email\":\"root@rootrez.com\",\r\n      \"phone\":\"8019791437\",\r\n      \"note\":\"testing again\",\r\n      \"addresses\":[\r\n         {\r\n            \"type\":\"Billing\",\r\n            \"line_1\":\"123\",\r\n            \"city\":\"Park City\",\r\n            \"country\":\"US\",\r\n            \"postal_code\":\"84098\",\r\n            \"region\":\"\",\r\n            \"state\":\"UT\"\r\n         }\r\n      ]\r\n   },\r\n   \"payment\":{\r\n      \"cardholder\":\"Root Rez\",\r\n      \"number\":\"4111111111111111\",\r\n      \"month\":\"12\",\r\n      \"year\":\"2024\",\r\n      \"cvv\":\"644\",\r\n      \"postal_code\":\"84098\"\r\n   },\r\n   \"meta_data\":{\r\n      \"session_id\":\"v8klth26ft8qotr09bttk1db53\",\r\n      \"user_agent\":\"Mozilla\\/5.0 (X11; Linux x86_64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/59.0.3071.104 Safari\\/537.36\",\r\n      \"ip\":\"127.0.0.1\"\r\n   }\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "500" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/inline_response_500"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\"message\":\"An Internal Error Has Occurred.\",\"url\":\"\\/publisher\\/v3.0\\/book\\/reservation\\/.json\",\"code\":500}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api-staging.rootrez.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api-staging.rootrez.com"
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "publisherv3.0bookreservation.json_rooms" : {
+        "type" : "object",
+        "properties" : {
+          "children" : {
+            "type" : "string"
+          },
+          "bed_type" : {
+            "type" : "boolean"
+          },
+          "adults" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "publisherv3.0bookreservation.json_meta_data" : {
+        "type" : "object",
+        "properties" : {
+          "ip" : {
+            "type" : "string"
+          },
+          "session_id" : {
+            "type" : "string"
+          },
+          "user_agent" : {
+            "type" : "string"
+          }
+        }
+      },
+      "publisherv3.0bookreservation.json_guest_addresses" : {
+        "type" : "object",
+        "properties" : {
+          "line_1" : {
+            "type" : "string"
+          },
+          "country" : {
+            "type" : "string"
+          },
+          "city" : {
+            "type" : "string"
+          },
+          "state" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "postal_code" : {
+            "type" : "string"
+          },
+          "region" : {
+            "type" : "string"
+          }
+        }
+      },
+      "publisherv3.0bookreservation.json_guest" : {
+        "type" : "object",
+        "properties" : {
+          "note" : {
+            "type" : "string"
+          },
+          "addresses" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "publisherv3.0bookreservation.json_guest_addresses"
+            }
+          },
+          "phone" : {
+            "type" : "string"
+          },
+          "last_name" : {
+            "type" : "string"
+          },
+          "first_name" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          }
+        }
+      },
+      "publisherv3.0bookreservation.json_payment" : {
+        "type" : "object",
+        "properties" : {
+          "number" : {
+            "type" : "string"
+          },
+          "cvv" : {
+            "type" : "string"
+          },
+          "month" : {
+            "type" : "string"
+          },
+          "year" : {
+            "type" : "string"
+          },
+          "cardholder" : {
+            "type" : "string"
+          },
+          "postal_code" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "rooms" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "publisherv3.0bookreservation.json_rooms"
+            }
+          },
+          "checkin" : {
+            "type" : "string"
+          },
+          "accommodation_id" : {
+            "type" : "string"
+          },
+          "meta_data" : {
+            "$ref" : "#/components/schemas/publisherv3.0bookreservation.json_meta_data"
+          },
+          "guest" : {
+            "$ref" : "#/components/schemas/publisherv3.0bookreservation.json_guest"
+          },
+          "payment" : {
+            "$ref" : "#/components/schemas/publisherv3.0bookreservation.json_payment"
+          },
+          "rate_code" : {
+            "type" : "string"
+          },
+          "checkout" : {
+            "type" : "string"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "property_id" : {
+            "type" : "string"
+          }
+        }
+      },
+      "inline_response_500" : {
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "integer"
+          },
+          "message" : {
+            "type" : "string"
+          },
+          "url" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

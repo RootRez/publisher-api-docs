@@ -1,0 +1,94 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "defaultTitle",
+    "description" : "defaultDescription",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api-staging.rootrez.com"
+  } ],
+  "paths" : {
+    "/publisher/v3.0/properties/available/.json" : {
+      "post" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n    \"key\": \"AC-573d14793ec629876f6d125d68deecfbefc43346\",\n    \"properties\": \"3159,2208,2168,2210\",\n    \"verbosity\": 3,\n    \"checkin\": \"2020-05-11\",\n    \"checkout\": \"2020-05-14\",\n    \"discount_code\": \"\",\n    \"promotion\": \"all\",\n    \"rooms\": [\n        {\n            \"adults\": 1,\n            \"children\": 0\n        }\n    ],\n    \"meta_data\": {}\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api-staging.rootrez.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api-staging.rootrez.com"
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "publisherv3.0propertiesavailable.json_rooms" : {
+        "type" : "object",
+        "properties" : {
+          "children" : {
+            "type" : "integer"
+          },
+          "adults" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "rooms" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "publisherv3.0propertiesavailable.json_rooms"
+            }
+          },
+          "checkin" : {
+            "type" : "string"
+          },
+          "discount_code" : {
+            "type" : "string"
+          },
+          "meta_data" : {
+            "type" : "object",
+            "properties" : { }
+          },
+          "checkout" : {
+            "type" : "string"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "properties" : {
+            "type" : "string"
+          },
+          "verbosity" : {
+            "type" : "integer"
+          },
+          "promotion" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

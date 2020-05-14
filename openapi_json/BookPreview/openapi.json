@@ -1,0 +1,113 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "PreviewBook",
+    "description" : "Preview a booking on pre-checkout pages.",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api-staging.rootrez.com"
+  } ],
+  "paths" : {
+    "/publisher/v3.0/book/preview/.json" : {
+      "post" : {
+        "description" : "Created for Rootrez Client use",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\"key\":\"MyKey\",\n   \"property_id\":\"3144\",\n   \"accommodation_id\":\"123\",\n   \"rate_code\":\"REZ\",\n   \"checkin\":\"2019-01-29\",\n   \"checkout\":\"2019-01-31\",\n   \"discount_code\": \"\",\n   \"rooms\":[  \n      {  \n         \"adults\":2,\n         \"children\":0\n      }\n   ],\n   \"meta_data\":{\n      \"session_id\":\"1aa1b1671982e8539aeed0fcd2aadc54\",\n      \"user_agent\":\"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/63.0.3239.132 Safari\/537.36\",\n      \"ip\":\"127.0.0.1\",\n   }\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api-staging.rootrez.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api-staging.rootrez.com"
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "publisherv3.0bookpreview.json_rooms" : {
+        "type" : "object",
+        "properties" : {
+          "children" : {
+            "type" : "integer"
+          },
+          "adults" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "publisherv3.0bookpreview.json_meta_data" : {
+        "type" : "object",
+        "properties" : {
+          "ip" : {
+            "type" : "string"
+          },
+          "session_id" : {
+            "type" : "string"
+          },
+          "user_agent" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "rooms" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "publisherv3.0bookpreview.json_rooms"
+            }
+          },
+          "limit" : {
+            "type" : "integer"
+          },
+          "meta_data" : {
+            "$ref" : "#/components/schemas/publisherv3.0bookpreview.json_meta_data"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "verbosity" : {
+            "type" : "integer"
+          },
+          "property_id" : {
+            "type" : "string"
+          },
+          "accommodation_id" : {
+            "type" : "string"
+          },
+          "rate_code" : {
+            "type" : "string"
+          },
+          "checkin" : {
+            "type" : "string"
+          },
+          "checkout" : {
+            "type" : "string"
+          },
+          "discount_code" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

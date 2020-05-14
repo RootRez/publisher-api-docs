@@ -1,0 +1,78 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "ListProperties",
+    "description" : "Return list of properties for Client.",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api-staging.rootrez.com"
+  } ],
+  "paths" : {
+    "/publisher/v3.0/properties/view/.json" : {
+      "post" : {
+        "description" : "Created for Rootrez Client use",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n   \"key\": \"MyKey\",\n   \"limit\": 3,\n   \"verbosity\": 3,\n   \"meta_data\":{\n      \"session_id\":\"39s0m0gt4ubo4d7lsr2b1a1pq5\",\n      \"user_agent\":\"Mozilla\\/5.0 (X11; Linux x86_64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/68.0.3440.106 Safari\\/537.36\",\n      \"ip\":\"127.0.0.1\"\n   }\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api-staging.rootrez.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api-staging.rootrez.com"
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "publisherv3.0propertiesview.json_meta_data" : {
+        "type" : "object",
+        "properties" : {
+          "ip" : {
+            "type" : "string"
+          },
+          "session_id" : {
+            "type" : "string"
+          },
+          "user_agent" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "limit" : {
+            "type" : "integer"
+          },
+          "meta_data" : {
+            "$ref" : "#/components/schemas/publisherv3.0propertiesview.json_meta_data"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "verbosity" : {
+            "type" : "integer"
+          }
+        }
+      }
+    }
+  }
+}

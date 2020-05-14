@@ -1,0 +1,110 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "GetAvailablePropertyDetails",
+    "description" : "Returns property data with the addition of availability.",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api-staging.rootrez.com"
+  } ],
+  "paths" : {
+    "/publisher/v3.0/property/view/.json" : {
+      "post" : {
+        "description" : "Returns property data with the addition of availability.",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\r\n   \"key\": \"MyApiKey\",\r\n   \"property_id\":\"3144\",\r\n   \"verbosity\": 2,\r\n   \"currency\":\"USD\",\r\n   \"checkin\":\"2019-05-17\",\r\n   \"checkout\":\"2019-05-19\",\r\n   \"discount_code\":\"\",\r\n   \"promotion\":\"all\",\r\n   \"rooms\":[\r\n      {\r\n         \"adults\":2,\r\n         \"children\":0\r\n      }\r\n   ],\r\n   \r\n   \"meta_data\":{\r\n      \"session_id\":\"39s0m0gt4ubo4d7lsr2b1a1pq5\",\r\n      \"user_agent\":\"Mozilla\\/5.0 (X11; Linux x86_64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/68.0.3440.106 Safari\\/537.36\",\r\n      \"ip\":\"127.0.0.1\"\r\n   }\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api-staging.rootrez.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api-staging.rootrez.com"
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "publisherv3.0propertyview.json_rooms" : {
+        "type" : "object",
+        "properties" : {
+          "children" : {
+            "type" : "integer"
+          },
+          "adults" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "publisherv3.0propertyview.json_meta_data" : {
+        "type" : "object",
+        "properties" : {
+          "ip" : {
+            "type" : "string"
+          },
+          "session_id" : {
+            "type" : "string"
+          },
+          "user_agent" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "rooms" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "publisherv3.0propertyview.json_rooms"
+            }
+          },
+          "checkin" : {
+            "type" : "string"
+          },
+          "discount_code" : {
+            "type" : "string"
+          },
+          "meta_data" : {
+            "$ref" : "#/components/schemas/publisherv3.0propertyview.json_meta_data"
+          },
+          "currency" : {
+            "type" : "string"
+          },
+          "checkout" : {
+            "type" : "string"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "property_id" : {
+            "type" : "string"
+          },
+          "verbosity" : {
+            "type" : "integer"
+          },
+          "promotion" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}
