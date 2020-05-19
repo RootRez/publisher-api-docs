@@ -1,14 +1,31 @@
-View
-HTTP POST: /publisher/v3.0/properties/view/.json
+## Properties
 
-Returns property data without availability. Take care to use a verbosity level that makes sense. When verbosity is increased, requests take longer.
+Two methods are available for displaying properties assigned to a publisher. One for 
+viewing property details and another for retrieving availability.
 
-View Definitions:
-Attribute	Type	Required	Default	Definition
-key	string	yes		Your API key
-limit	int	no	0	Limits the number of results returned. 0 will return all
-verbosity	int	no	0	Controls the amount of data returned. 0 (least) - 3 (most) are supported.
-View Request:
+| Endpoint | HTTP |
+| ------------- | ------------- |
+| /publisher/v3.0/properties/view/.json  | POST  |
+| /publisher/v3.0/properties/available/.json  | POST  |
+
+### View
+
+> HTTP POST: /publisher/v3.0/properties/view/.json
+
+Returns property data without availability. Take care to use a verbosity level that makes 
+sense. When verbosity is increased, requests take longer.
+
+##### View Definitions:
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| key  | string | yes |  | Your API key  |
+| limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
+| verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least) - 3 (most) are supported.  |
+
+##### View Request:
+
+```json
 {
    "key": "MyApiKey",
    "limit": 1,
@@ -19,3 +36,6 @@ View Request:
       "ip":"127.0.0.1"
    }
 }
+```
+
+[View property response](samples/property/property-view-verbosity-3.json).
