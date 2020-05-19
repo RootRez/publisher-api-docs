@@ -1,0 +1,61 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "defaultTitle",
+    "description" : "GetDiscounts",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://api-staging.rootrez.com"
+  } ],
+  "paths" : {
+    "/publisher/v3.0/discounts/all.json" : {
+      "get" : {
+        "description" : "Created for Rootrez Client use",
+        "parameters" : [ {
+          "name" : "checkin",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2020-08-24"
+        }, {
+          "name" : "checkout",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2020-08-27"
+        }, {
+          "name" : "key",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "MyKey"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://api-staging.rootrez.com"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://api-staging.rootrez.com"
+      } ]
+    }
+  },
+  "components" : { }
+}
