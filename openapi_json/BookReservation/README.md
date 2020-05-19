@@ -1,49 +1,69 @@
-Reservation
-HTTP POST: /publisher/v3.0/book/reservation/.json
+### Reservation
 
-The reservation method processes the submitted information and returns a confirmation number upon success.
+> HTTP POST: /publisher/v3.0/book/reservation/.json
 
-Reservation Attributes:
-All required attributes from preview
+The reservation method processes the submitted information and returns a confirmation number 
+upon success.
 
-Attribute	Type	Required	Default	Definition
-rooms	array	yes		Array of room objects, see below
-guest	obj	yes		See guest object below
-payment	obj	yes		See payment object below
-Guest Object
-Attribute	Type	Required	Default	Definition
-first_name	obj	yes		Guest first name
-last_name	obj	yes		Guest first name
-email	obj	yes		Guest email address
-phone	obj	yes		Guest phone number
-note	obj	no		An optional note to the hotel
-addresses	array	no		Array of objects
-Address Object
-Attribute	Type	Required	Default	Definition
-type	string	yes		Always Billing
-line_1	string	yes		Street address
-line_2	string	no		Apartment, Suite, etc...
-country	string	yes		Two character ISO country code
-postal_code	string	yes		Postal code
-region	string	* yes		Non-US reservations only. Province, State, or Administrative Region
-state	string	* yes		US reservations only
-U.S. addresses: the two character state abbreviation is required for state.
-Canadian: the two character province abbreviation is required for region.
-Australian: the two character state abbreviation is required for region.
-Payment Object
-Attribute	Type	Required	Default	Definition
-cardholder	string	yes		Cardholders name
-month	string	yes		Two character month (00-12)
-year	int	yes		Four digit year
-cvv	string	yes		CVV or CVV2
-postal_code	string	yes		Postal code
-Room Object
-Attribute	Type	Required	Default	Definition
-name	string	yes		Name of guest to put the room under
-adults	int	yes		Amount of adults
-children	int	no	0	Amount of children
-bed_type	string	no	0	Required if bed type option was specified
-Reservation Request
+##### Reservation Attributes:
+
+All required attributes from [preview](book.md#preview)
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| rooms  | array | yes |  | Array of room objects, see below |
+| guest  | obj | yes |  | See guest object below |
+| payment  | obj | yes |  | See payment object below |
+
+##### Guest Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| first_name  | obj | yes |  | Guest first name |
+| last_name  | obj | yes |  | Guest first name |
+| email  | obj | yes |  | Guest email address |
+| phone  | obj | yes |  | Guest phone number |
+| note  | obj | no |  | An optional note to the hotel |
+| addresses | array | no |  | Array of objects |
+
+##### Address Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| type  | string | yes |  | Always Billing |
+| line_1  | string | yes |  | Street address |
+| line_2  | string | no |  | Apartment, Suite, etc... |
+| country  | string | yes |  | Two character ISO country code |
+| postal_code  | string | yes |  | Postal code |
+| region | string | * yes |  | Non-US reservations only. Province, State, or Administrative Region |
+| state | string | * yes |  | US reservations only |
+
+* U.S. addresses: the two character state abbreviation is required for state. 
+* Canadian: the two character province abbreviation is required for region. 
+* Australian: the two character state abbreviation is required for region. 
+
+##### Payment Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| cardholder  | string | yes |  | Cardholders name |
+| month  | string | yes |  | Two character month (00-12) |
+| year  | int | yes |  | Four digit year |
+| cvv  | string | yes |  | CVV or CVV2 |
+| postal_code  | string | yes |  | Postal code |
+
+##### Room Object
+
+| Attribute | Type | Required | Default | Definition |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| name  | string | yes |  | Name of guest to put the room under  |
+| adults  | int | yes |  | Amount of adults  |
+| children  | int | no | 0 | Amount of children  |
+| bed_type  | string | no | 0 | Required if bed type option was specified  |
+
+##### Reservation Request
+
+```json
 {
    "key":"MyKey",
    "property_id":"3144",
@@ -91,3 +111,8 @@ Reservation Request
       "ip":"127.0.0.1"
    }
 }
+```
+
+##### Reservation Response
+
+View the [reservation response](samples/book/reservation.json).
