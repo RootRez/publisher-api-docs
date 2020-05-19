@@ -1,41 +1,43 @@
-## Properties
+## Property
 
-Two methods are available for displaying properties assigned to a publisher. One for 
+Two methods are available for displaying property details. One for 
 viewing property details and another for retrieving availability.
 
 | Endpoint | HTTP |
 | ------------- | ------------- |
-| /publisher/v3.0/properties/view/.json  | POST  |
-| /publisher/v3.0/properties/available/.json  | POST  |
+| /publisher/v3.0/property/view/.json  | POST  |
+| /publisher/v3.0/property/available/.json  | POST  |
 
 ### View
 
-> HTTP POST: /publisher/v3.0/properties/view/.json
+> HTTP POST: /publisher/v3.0/property/view/.json
 
 Returns property data without availability. Take care to use a verbosity level that makes 
 sense. When verbosity is increased, requests take longer.
 
-##### View Definitions:
+##### View Attributes:
 
 | Attribute | Type | Required | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | key  | string | yes |  | Your API key  |
+| property_id  | int | yes |  | The property ID |
 | limit  | int | no | 0 | Limits the number of results returned. 0 will return all  |
-| verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least) - 3 (most) are supported.  |
+| verbosity | int | no  | 0 | Controls the amount of data returned. 0 (least), 1, and 2 (most) are supported.  |
 
 ##### View Request:
 
 ```json
 {
    "key": "MyApiKey",
+   "property_id": 3144,
    "limit": 1,
-   "verbosity": 3,
+   "verbosity": 2,
    "meta_data":{
-      "session_id":"39s0m0gt4ubo4d7lsr2b1a1pq5",
-      "user_agent":"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.106 Safari\/537.36",
-      "ip":"127.0.0.1"
+      "session_id":"1aa1b1671982e8539aeed0fcd2aadc54",
    }
 }
 ```
 
-[View property response](samples/property/property-view-verbosity-3.json).
+##### View Response:
+
+Returns a single property object, see [view response](properties.md#view-response).
