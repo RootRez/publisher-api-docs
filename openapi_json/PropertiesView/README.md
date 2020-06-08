@@ -38,4 +38,4 @@ sense. When verbosity is increased, requests take longer.
 }
 ```
 
-[View property response](samples/property/property-view-verbosity-3.json).
+[View property response](https://github.com/rootrezdev/publisher-api-docs/blob/master/samples/property/property-view-verbosity-3.json).
