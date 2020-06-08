@@ -40,4 +40,4 @@ sense. When verbosity is increased, requests take longer.
 
 ##### View Response:
 
-Returns a single property object, see [view response](properties.md#view-response).
+Returns a single property object, see [view response](https://github.com/rootrezdev/publisher-api-docs/blob/master/properties.md#view-response).
