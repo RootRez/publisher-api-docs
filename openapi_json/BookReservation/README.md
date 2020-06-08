@@ -115,4 +115,4 @@ All required attributes from [preview](book.md#preview)
 
 ##### Reservation Response
 
-View the [reservation response](samples/book/reservation.json).
+View the [reservation response](https://github.com/rootrezdev/publisher-api-docs/blob/master/samples/book/reservation.json).
