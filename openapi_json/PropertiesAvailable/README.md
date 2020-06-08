@@ -66,4 +66,4 @@ see [property response](samples/property/property-available-verbosity-3.json).
 
 ##### Definitions
 
-See [Property Detail](property.md) for definitions
+See [Property Detail](https://github.com/rootrezdev/publisher-api-docs/blob/master/property.md) for definitions
