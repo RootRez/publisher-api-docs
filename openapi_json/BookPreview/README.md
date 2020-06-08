@@ -55,4 +55,4 @@ subtotal, taxes, fees, and totals.
 ##### Preview Response:
 
 The preview response is similar to a property/available.json response, but contains a complete 
-breakdown of taxes and fees. [See full response](samples/book/preview.json).
+breakdown of taxes and fees. [See full response](../samples/book/preview.json).
