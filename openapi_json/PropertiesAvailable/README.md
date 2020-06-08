@@ -61,7 +61,7 @@ cannot support multi-room bookings.
 ##### Availability Response:
 
 The response structure is an array of property objects, 
-see [property response](samples/property/property-available-verbosity-3.json).
+see [property response](https://github.com/rootrezdev/publisher-api-docs/blob/master/samples/property/property-available-verbosity-3.json).
 
 
 ##### Definitions
