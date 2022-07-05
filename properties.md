@@ -42,7 +42,7 @@ sense. When verbosity is increased, requests take longer.
 
 ### Availability
 
-> HTTP POST: /publisher/v3.0/properties/availability/.json
+> HTTP POST: /publisher/v3.0/properties/available/.json
 
 Returns property data with the addition of availability. Take care to use a verbosity level 
 that makes sense. When verbosity is increased, requests take longer.
