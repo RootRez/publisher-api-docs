@@ -4,7 +4,7 @@ Discounts can be configured via the CRS Admin interface under your Publisher.
 
 | Endpoint | HTTP |
 | ------------- | ------------- |
-| /publisher/v3.0/discounts/all.json | GET  |
+| /publisher/v3.0/discounts/all/.json | GET  |
 
 ### All
 
