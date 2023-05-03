@@ -1,43 +1,26 @@
-# RootRez Publisher API Documentation
+# Ripe API Reference
+## API documentation for Ripe products and services.
 
-This document is meant to guide a developer through the process of connecting to the [RootRez API](https://www.rootrez.com/support/developers/). 
-The Publisher API operates as a gateway for registered publishers to view properties, book 
-reservations, and retrieve other meta data you’d except from an Online Travel Agency (OTA). 
-The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or
- POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with 
- some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
+This will help guide you through the process of connecting to our  [API](https://www.rootrez.com/support/developers/). 
+The Ripe (formally RootRez) API operates as a gateway for registered clients and partners to view properties, book reservations, and retrieve other meta data. The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
 
 Typical application workflow ([see example site](https://lodging.bookwesteros.com)):
 
-1. [Load Settings](settings.md)
+[Load Settings](settings.md) Load any pertitent publisher settings into your local cache.
 
-Load any pertitent publisher settings into your local cache.
+[Get Properties](properties.md) Best practice is to request all properties via a verbose call to properties/view.json storing the static property meta data in a local cache. Then update lead rates with low-verbosity calls to properties/available.json. XHR calls can be used within your client to load full room rates with singluar calls to property/available.json
 
-2. [Get Properties](properties.md)
+[Property Detail](property.md) Typically used for XHR calls to get additional property data from your search results page or when browsing direct to a property page.
 
-Best practice is to request all properties via a verbose call to properties/view.json storing the static property meta data in a local cache. Then update lead rates with low-verbosity calls to properties/available.json. XHR calls can be used within your client to load full room rates with singluar calls to property/available.json
+[Checkout Preview](book.md#preview) The preview call will perform a real-time inventory lookup where possible. This should only be called on your checkout page implementation.
 
-3. [Property Detail](property.md)
+[Book Reservation](book.md#book) For booking a reservation only.
 
-Typically used for XHR calls to get additional property data from your search results page or when browsing direct to a property page.
-
-4. [Checkout Preview](book.md#preview)
-
-The preview call will perform a real-time inventory lookup where possible. This should only be called on your checkout page implementation.
-
-5. [Book Reservation](book.md#book)
-
-For booking a reservation only.
-
-6. [View Reservation](reservation.md)
-
-Will return single or mulitple reservations.
+[View Reservation](reservation.md) Will return single or mulitple reservations.
 
 ## Misc
 
-- [Discounts](discounts.md)
-
-Retrieve discount code information.
+[Discounts](discounts.md) Retrieve discount code information.
 
 
 ## Getting Starting
