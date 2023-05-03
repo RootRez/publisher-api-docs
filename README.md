@@ -2,7 +2,7 @@
 ## API documentation for Ripe products and services.
 
 This will help guide you through the process of connecting to our  [API](https://www.rootrez.com/support/developers/). 
-The Ripe (formally RootRez) API operates as a gateway for registered clients and partners to view properties, book reservations, and retrieve other meta data. The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
+The Ripe (formally Ripe) API operates as a gateway for registered clients and partners to view properties, book reservations, and retrieve other meta data. The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
 
 Typical application workflow ([see example site](https://lodging.bookwesteros.com)):
 
@@ -25,7 +25,7 @@ Typical application workflow ([see example site](https://lodging.bookwesteros.co
 
 ## Getting Starting
 
-If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to get started. Your technical implementation coordinator will email you the following details:
+If you haven't already, [contact Ripe](https://bookripe.com) to get started. Your technical implementation coordinator will email you the following details:
 
 - API key
 - Sandbox environment details
@@ -70,7 +70,7 @@ When doing HTTP POST requests to the API the following meta data fields are requ
 
 ## Best Practices
 
-* Use HTTPS. All communication with RootRez is handled over HTTPS.
+* Use HTTPS. All communication with Ripe is handled over HTTPS.
 * Keep your API key out of version control (such as GIT or SVN), instead store in a local config file or similar secure means.
 * Cache data that is unlikely to change frequently such as property data (not including rates) 
 and publisher settings.
@@ -151,12 +151,12 @@ implementation.
 
 **RemoteInventoryException**
 
-RootRez was unable to verify the inventory exists in the hotels inventory system or within a 
+Ripe was unable to verify the inventory exists in the hotels inventory system or within a 
 third-parties inventory system.
 
 **RemoteInformationException**
 
-RootRez was unable to retrieve hotel meta data from the hotels information system and/or 
+Ripe was unable to retrieve hotel meta data from the hotels information system and/or 
 third party system.
 
 **DuplicateBookingException**
