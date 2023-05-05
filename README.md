@@ -1,6 +1,6 @@
-# RootRez Publisher API Documentation
+# Ripe Publisher API Documentation
 
-This document is meant to guide a developer through the process of connecting to the [RootRez API](https://www.rootrez.com/support/developers/). 
+This document is meant to guide a developer through the process of connecting to the [Ripe API](https://www.rootrez.com/support/developers/). 
 The Publisher API operates as a gateway for registered publishers to view properties, book 
 reservations, and retrieve other meta data you’d expect from an Online Travel Agency (OTA). 
 The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or
@@ -42,7 +42,7 @@ Retrieve discount code information.
 
 ## Getting Starting
 
-If you haven't already, [contact RootRez](https://www.rootrez.com/contact/) to get started. Your technical implementation coordinator will email you the following details:
+If you haven't already, [contact Ripe](https://www.bookripe.com) to get started. Your technical implementation coordinator will email you the following details:
 
 - API key
 - Sandbox environment details
@@ -87,13 +87,13 @@ When doing HTTP POST requests to the API the following meta data fields are requ
 
 ## Best Practices
 
-* Use HTTPS. All communication with RootRez is handled over HTTPS.
+* Use HTTPS. All communication with Ripe is handled over HTTPS.
 * Keep your API key out of version control (such as GIT or SVN), instead store in a local config file or similar secure means.
 * Cache data that is unlikely to change frequently such as property data (not including rates) 
 and publisher settings.
 * Use low verbosity levels (0 is lowest, 3 is highest). The less data requested, the faster 
 the response.
-* Pre-validate customer data such as billing address, email address, and credit card data before making requests to RootRez. While we do validate this information, creating client-side checks for your customers can greatly improve the booking experience.
+* Pre-validate customer data such as billing address, email address, and credit card data before making requests to Ripe. While we do validate this information, creating client-side checks for your customers can greatly improve the booking experience.
 * It's advised that you watch this project so you receive notices on changes to documenation, which may include new additions to the API.
 
 ## Development Life Cycle
@@ -168,12 +168,12 @@ implementation.
 
 **RemoteInventoryException**
 
-RootRez was unable to verify the inventory exists in the hotels inventory system or within a 
+Ripe was unable to verify the inventory exists in the hotels inventory system or within a 
 third-parties inventory system.
 
 **RemoteInformationException**
 
-RootRez was unable to retrieve hotel meta data from the hotels information system and/or 
+Ripe was unable to retrieve hotel meta data from the hotels information system and/or 
 third party system.
 
 **DuplicateBookingException**
