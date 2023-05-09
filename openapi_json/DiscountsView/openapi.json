@@ -11,7 +11,7 @@
   "paths" : {
     "/publisher/v3.0/discounts/all.json" : {
       "get" : {
-        "description" : "Created for Rootrez Client use",
+        "description" : "Created for Ripe Client use",
         "parameters" : [ {
           "name" : "checkin",
           "in" : "query",

@@ -1,6 +1,6 @@
 ## Currencies
 
-You can retrieve currencies supported by the RootRez API via the currencies endpoint
+You can retrieve currencies supported by the Ripe API via the currencies endpoint
 
 | Endpoint | HTTP |
 | ------------- | ------------- |

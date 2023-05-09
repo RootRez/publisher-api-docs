@@ -11,7 +11,7 @@
   "paths" : {
     "/publisher/v3.0/properties/view/.json" : {
       "post" : {
-        "description" : "Created for Rootrez Client use",
+        "description" : "Created for Ripe Client use",
         "requestBody" : {
           "content" : {
             "application/json" : {
