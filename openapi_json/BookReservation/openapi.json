@@ -11,7 +11,7 @@
   "paths" : {
     "/publisher/v3.0/book/reservation/.json" : {
       "post" : {
-        "description" : "Created for RootRez Client use",
+        "description" : "Created for Ripe Client use",
         "requestBody" : {
           "content" : {
             "application/json" : {
@@ -20,7 +20,7 @@
               },
               "examples" : {
                 "0" : {
-                  "value" : "{\r\n   \"key\":\"MyKey\",\r\n   \"property_id\":\"3159\",\r\n   \"accommodation_id\":\"14972\",\r\n   \"rate_code\":\"REZ\",\r\n   \"checkin\":\"2020-08-25\",\r\n   \"checkout\":\"2020-08-27\",\r\n   \"rooms\":[\r\n      {\r\n         \"name\":\"camera 1 persoana\",\r\n         \"adults\":\"1\",\r\n         \"children\":\"0\",\r\n         \"bed_type\":false\r\n      }\r\n   ],\r\n   \"guest\":{\r\n      \"first_name\":\"RootRez\",\r\n      \"last_name\":\"RootRez\",\r\n      \"email\":\"root@rootrez.com\",\r\n      \"phone\":\"8019791437\",\r\n      \"note\":\"testing again\",\r\n      \"addresses\":[\r\n         {\r\n            \"type\":\"Billing\",\r\n            \"line_1\":\"123\",\r\n            \"city\":\"Park City\",\r\n            \"country\":\"US\",\r\n            \"postal_code\":\"84098\",\r\n            \"region\":\"\",\r\n            \"state\":\"UT\"\r\n         }\r\n      ]\r\n   },\r\n   \"payment\":{\r\n      \"cardholder\":\"Root Rez\",\r\n      \"number\":\"4111111111111111\",\r\n      \"month\":\"12\",\r\n      \"year\":\"2024\",\r\n      \"cvv\":\"644\",\r\n      \"postal_code\":\"84098\"\r\n   },\r\n   \"meta_data\":{\r\n      \"session_id\":\"v8klth26ft8qotr09bttk1db53\",\r\n      \"user_agent\":\"Mozilla\\/5.0 (X11; Linux x86_64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/59.0.3071.104 Safari\\/537.36\",\r\n      \"ip\":\"127.0.0.1\"\r\n   }\r\n}"
+                  "value" : "{\r\n   \"key\":\"MyKey\",\r\n   \"property_id\":\"3159\",\r\n   \"accommodation_id\":\"14972\",\r\n   \"rate_code\":\"REZ\",\r\n   \"checkin\":\"2020-08-25\",\r\n   \"checkout\":\"2020-08-27\",\r\n   \"rooms\":[\r\n      {\r\n         \"name\":\"camera 1 persoana\",\r\n         \"adults\":\"1\",\r\n         \"children\":\"0\",\r\n         \"bed_type\":false\r\n      }\r\n   ],\r\n   \"guest\":{\r\n      \"first_name\":\"Ripe\",\r\n      \"last_name\":\"Ripe\",\r\n      \"email\":\"root@bookripe.com\",\r\n      \"phone\":\"8019791437\",\r\n      \"note\":\"testing again\",\r\n      \"addresses\":[\r\n         {\r\n            \"type\":\"Billing\",\r\n            \"line_1\":\"123\",\r\n            \"city\":\"Park City\",\r\n            \"country\":\"US\",\r\n            \"postal_code\":\"84098\",\r\n            \"region\":\"\",\r\n            \"state\":\"UT\"\r\n         }\r\n      ]\r\n   },\r\n   \"payment\":{\r\n      \"cardholder\":\"Root Rez\",\r\n      \"number\":\"4111111111111111\",\r\n      \"month\":\"12\",\r\n      \"year\":\"2024\",\r\n      \"cvv\":\"644\",\r\n      \"postal_code\":\"84098\"\r\n   },\r\n   \"meta_data\":{\r\n      \"session_id\":\"v8klth26ft8qotr09bttk1db53\",\r\n      \"user_agent\":\"Mozilla\\/5.0 (X11; Linux x86_64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/59.0.3071.104 Safari\\/537.36\",\r\n      \"ip\":\"127.0.0.1\"\r\n   }\r\n}"
                 }
               }
             }

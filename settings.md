@@ -13,7 +13,7 @@ Response:
 ```json
 {
     "data": {
-        "organization": "RootRez",
+        "organization": "Ripe",
         "organization_currency": null,
         "destinations": [
             {
@@ -55,7 +55,7 @@ Response:
             "domain": "lodging.bookwesteros.com",
             "organization": {
                 "id": 3,
-                "name": "RootRez"
+                "name": "Ripe"
             },
             "settings": {
                 "client": {
@@ -168,7 +168,7 @@ Response:
 
 | Attribute | Type | Default | Definition |
 | ------------- | ------------- | ------------- | ------------- 
-| booking_engine | string | ota | Applicable to RootRez hosted publishers only |
+| booking_engine | string | ota | Applicable to Ripe hosted publishers only |
 | sort_type | string |  | How properties should be sorted (manual vs random) |
 | destination_type | string |  | Controls map display for white label publishers (single vs multiple) |
 | title_tag | string |  | HTML title tag for white label publishers |

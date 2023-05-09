@@ -37,7 +37,7 @@
         "checkout": "2019-01-31",
         "guests_adult": 2,
         "guests_children": 0,
-        "guest_name": "RootRez",
+        "guest_name": "Ripe",
         "guest_note": "testing again"
       },
       "property": {
@@ -110,9 +110,9 @@
         {
           "id": 28296,
           "reservation_id": 28328,
-          "first_name": "RootRez",
-          "last_name": "RootRez",
-          "email_address": "root@rootrez.com",
+          "first_name": "Ripe",
+          "last_name": "Ripe",
+          "email_address": "root@bookripe.com",
           "reservation_customer_telephone": {
             "number": "8019791437"
           },

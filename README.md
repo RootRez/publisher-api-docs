@@ -1,44 +1,29 @@
-# Ripe Publisher API Documentation
+# Ripe API Reference
 
-This document is meant to guide a developer through the process of connecting to the [Ripe API](https://www.rootrez.com/support/developers/). 
-The Publisher API operates as a gateway for registered publishers to view properties, book 
-reservations, and retrieve other meta data you’d expect from an Online Travel Agency (OTA). 
-The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or
- POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with 
- some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertitent to this implementation.
+## API documentation for Ripe products and services. 
+
+
+ This will help guide you through the process of connecting to our API. The Ripe (formally RootRez) operates as a gateway for registered clients and partners to view properties, book reservations, and retrieve other meta data. The API is a restful-like web service that can be accessed via JSON payloads over HTTPS GET or POST depending on the endpoint. Before getting started, take a moment to familiarize yourself with some [definitions](https://github.com/rootrezdev/publisher-api-docs/wiki/Definitions) pertinent to this implementation.
+
 
 Typical application workflow ([see example site](https://lodging.bookwesteros.com)):
 
-- [Load Settings](settings.md)
+[Load Settings](settings.md) Load any pertinent settings into your local cache.
 
-Load any pertitent publisher settings into your local cache.
+[Get Properties](properties.md) Best practice is to request all properties via a verbose call to properties/view.json storing the static property meta data in a local cache. Then update lead rates with low-verbosity calls to properties/available.json. XHR calls can be used within your client to load full room rates with singular calls to property/available.json
 
-- [Get Properties](properties.md)
+[Property Detail](property.md) Typically used for XHR calls to get additional property data from your search results page or when browsing direct to a property page.
 
-Best practice is to request all properties via a verbose call to properties/view.json storing the static property meta data in a local cache. Then update lead rates with low-verbosity calls to properties/available.json. XHR calls can be used within your client to load full room rates with singluar calls to property/available.json
+[Checkout Preview](book.md#preview) The preview call will perform a real-time inventory lookup where possible. This should only be called on your checkout page implementation.
 
-- [Property Detail](property.md)
 
-Typically used for XHR calls to get additional property data from your search results page or when browsing direct to a property page.
+[Book Reservation](book.md#book) For booking a reservation only.
 
-- [Checkout Preview](book.md#preview)
-
-The preview call will perform a real-time inventory lookup where possible. This should only be called on your checkout page implementation.
-
-- [Book Reservation](book.md#book)
-
-For booking a reservation only.
-
-- [View Reservation](reservation.md)
-
-Will return single or mulitple reservations.
+[View Reservation](reservation.md) Will return single or multiple reservations.
 
 ## Misc
 
-- [Discounts](discounts.md)
-
-Retrieve discount code information.
-
+[Discounts](discounts.md) Retrieve discount code information.
 
 ## Getting Starting
 
@@ -47,7 +32,6 @@ If you haven't already, [contact Ripe](https://www.bookripe.com) to get started.
 - API key
 - Sandbox environment details
 - [Postman](https://www.getpostman.com/) request/response collections
-
 
 ## Hello World 
 
@@ -89,8 +73,7 @@ When doing HTTP POST requests to the API the following meta data fields are requ
 
 * Use HTTPS. All communication with Ripe is handled over HTTPS.
 * Keep your API key out of version control (such as GIT or SVN), instead store in a local config file or similar secure means.
-* Cache data that is unlikely to change frequently such as property data (not including rates) 
-and publisher settings.
+* Cache data that is unlikely to change frequently such as property data (not including rates) and client settings.
 * Use low verbosity levels (0 is lowest, 3 is highest). The less data requested, the faster 
 the response.
 * Pre-validate customer data such as billing address, email address, and credit card data before making requests to Ripe. While we do validate this information, creating client-side checks for your customers can greatly improve the booking experience.
@@ -145,8 +128,7 @@ This and a 500 Exception, are general exception messages. Most 500 level respons
 
 ## Specific Exceptions
 
-Most exceptions will be accompanied with additional data in the message string. These can be caught in your application and specific, 
-user-friendly messages can be created for your end-users.
+Most exceptions will be accompanied with additional data in the message string. These can be caught in your application and specific, user-friendly messages can be created for your end-users.
 
 **RoomUnavailableException**
 
@@ -162,14 +144,12 @@ Any address related errors on a booking request.
 
 **CreditCardException**
 
-Invalid credit card data. Either we couldn’t verify the cardholders account or it failed a 
-Luhn algorithm check. You should pre-check credit cards against the Luhn algorithm in your 
-implementation.
+Invalid credit card data. Either we couldn’t verify the cardholders account or it failed a Luhn algorithm check. 
+You should pre-check credit cards against the Luhn algorithm in your implementation.
 
 **RemoteInventoryException**
 
-Ripe was unable to verify the inventory exists in the hotels inventory system or within a 
-third-parties inventory system.
+Ripe was unable to verify the inventory exists in the hotels inventory system or within a third-parties inventory system.
 
 **RemoteInformationException**
 

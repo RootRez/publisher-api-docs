@@ -73,16 +73,16 @@ All required attributes from [preview](book.md#preview)
    "checkout":"2019-01-31",
    "rooms":[
       {
-         "name":"RootRez",
+         "name":"Ripe",
          "adults":"2",
          "children":"0",
          "bed_type":false
       }
    ],
    "guest":{
-      "first_name":"RootRez",
-      "last_name":"RootRez",
-      "email":"root@rootrez.com",
+      "first_name":"Ripe",
+      "last_name":"Ripe",
+      "email":"root@bookripe.com",
       "phone":"8019791437",
       "note":"testing again",
       "addresses":[
